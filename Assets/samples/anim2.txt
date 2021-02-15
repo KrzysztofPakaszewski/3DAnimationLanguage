@@ -1,0 +1,42 @@
+Object sun = Cube
+transform sun to [4,4,4] in 0;
+
+Object mercury = Cube
+transform mercury to [0.5, 0.5, 0.5] in 0;
+move mercury to [5, 0, 0] in 0;
+
+Object venus = Cube
+move venus to [8, 0, 0] in 0;
+
+<>
+  rotate sun to [0, 360, 0] in 24;
+  Number test = 0;
+  while(test < 3){
+    <>
+      {
+        move mercury to [0, 5, 0] in 2;
+        move mercury to [-5, 0, 0] in 2;
+        move mercury to [0, -5, 0] in 2;
+        move mercury to [5, 0, 0] in 2;
+      }
+      if(test == 0){
+        rotate mercury to [360, 0, 0] in 8;
+      }else if(test == 1){
+        rotate mercury to [0, 360, 0] in 8;
+      }else {
+        rotate mercury to [0, 0, 360] in 8;
+      }
+    </>
+    test = test + 1;
+  }
+  rotate venus to [0, 360 * 2, 0] in 24;
+
+  {
+    move venus to [0, -8, 0] in 6;
+    move venus to [-8, 0, 0] in 6;
+    move venus to [0, 8, 0] in 6;
+    move venus to [8, 0, 0] in 6;
+  }
+
+</>
+

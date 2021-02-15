@@ -1,0 +1,19 @@
+Object sphere= Sphere;
+move sphere to [0,3,3] in 0;
+
+Object cube = Cube;
+move cube to [-3, 2, 0] in 0;
+
+Object cylinder = Cylinder;
+move cylinder to [4,-4,0] in 0;
+
+Object group = [sphere, cube, cylinder, Sphere];
+
+<>
+  rotate group to [0, 360 *3, 0] in 9;
+  {
+    move group to [2, 0, 0] in 3;
+    move group to [-2, 0, 0] in 3;
+    move group to [0,0,0] in 3;
+  }
+</>

@@ -1,0 +1,17 @@
+function moveInSquare(Object target, Number edge, Number time){
+   Number point = edge/2;
+   move target to [point, point, 0] in 0;
+   move target to [point, -1* point, 0] in time/4;
+   move target to [-1* point, -1* point, 0] in time/4;
+   move target to [-1* point, point, 0] in time/4;
+   move target to [point, point, 0] in time/4;
+}
+
+Object cube = Cube;
+Object sphere = Sphere;
+
+<>
+  moveInSquare(cube, 6, 10);
+  moveInSquare(sphere, 10, 10);
+  rotate cube to [360 * 4, 360 * 4, 0] in 10;
+</>

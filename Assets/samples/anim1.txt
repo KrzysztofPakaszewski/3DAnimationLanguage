@@ -1,0 +1,4 @@
+Object test = Sphere;
+Object cube = Cube;
+move test from [5,5,0] to [1,-2,8] in 2;
+transform cube to [1,5.5,1] in 2;
