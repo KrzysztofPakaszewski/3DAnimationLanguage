@@ -81,7 +81,8 @@ sequence: LEFT_BRACE instr+=instruction* RIGHT_BRACE;
 
 command: assign SEMICOLON
     | action SEMICOLON
-    | call
+    | call SEMICOLON
+    | wait SEMICOLON
     ;
 
 type: OBJECT_TYPE
@@ -89,6 +90,8 @@ type: OBJECT_TYPE
     | VECTOR_TYPE
     | BOOLEAN_TYPE
     ;
+
+wait: WAIT numberValue;
 
 argument: type VARIABLE_NAME;
 
@@ -184,6 +187,8 @@ call: VARIABLE_NAME LEFT_PAREN arguments RIGHT_PAREN;
 // Lexer Rules
 
 // Keywords
+
+WAIT : 'wait';
 
 FUNCTION : 'function';
 
@@ -323,3 +328,5 @@ fragment FileLetter : Letter | '/' | '.';
 // skip white space
 
 WHITE_SPACE  :  [ \t\r\n\u000C]+ -> skip;
+
+UNKNOWN : .;
