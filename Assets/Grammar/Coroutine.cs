@@ -1,4 +1,5 @@
 namespace anim {
+    using System;
     using UnityEngine;
     using System.Collections;
 
@@ -27,6 +28,7 @@ namespace anim {
 
         public IEnumerator moveObject(GameObject target, Vector3 to, float duration, Vector3? from, float start) {
             yield return new WaitForSeconds(start);
+
             Vector3 fromVal;
             if (from.HasValue)
             {
@@ -37,7 +39,13 @@ namespace anim {
                 fromVal = target.transform.position;
             }
             Vector3 difference = to - fromVal;
-            for (float curTime = 0 ; curTime < duration; curTime += delta) {
+
+            float diff = 0.004f;
+            if (start < 0.02f) {
+                diff = 0.01f;
+            }
+
+            for (float curTime = 0f; curTime < duration; curTime += delta + diff) {
                 float percent = curTime / duration;
 
                 target.transform.position = fromVal + difference * percent;
@@ -57,10 +65,17 @@ namespace anim {
             }
             else
             {
-                fromVal = target.transform.position;
+                fromVal = target.transform.rotation.eulerAngles;
             }
             Vector3 difference = to - fromVal;
-            for (float curTime = 0; curTime < duration; curTime += delta)
+
+            float diff = 0.004f;
+            if (start < 0.02f)
+            {
+                diff = 0.01f;
+            }
+
+            for (float curTime = 0; curTime < duration; curTime += delta + diff)
             {
                 float percent = curTime / duration;
 
@@ -81,10 +96,17 @@ namespace anim {
             }
             else
             {
-                fromVal = target.transform.position;
+                fromVal = target.transform.localScale;
             }
             Vector3 difference = to - fromVal;
-            for (float curTime = 0; curTime < duration; curTime += delta)
+
+            float diff = 0.004f;
+            if (start < 0.02f)
+            {
+                diff = 0.01f;
+            }
+
+            for (float curTime = 0; curTime < duration; curTime += delta + diff)
             {
                 float percent = curTime / duration;
 

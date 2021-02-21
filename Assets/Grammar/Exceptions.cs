@@ -31,4 +31,8 @@ namespace anim {
         public InvalidArguments(): base("Invalid arguments for functions"){}
     }
 
+    public class ParseException : Exception {
+        public ParseException(String e) : base(e) { }
+    }
+
 }

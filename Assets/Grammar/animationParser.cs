@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generated from grammar\Animation.g4 by ANTLR 4.6.6
+// Generated from C:\Users\krzys\Documents\praca\AnimationLanguage\grammar\Animation.g4 by ANTLR 4.6.6
 
 // Unreachable code detected
 #pragma warning disable 0162
@@ -31,32 +31,32 @@ using DFA = Antlr4.Runtime.Dfa.DFA;
 [System.CLSCompliant(false)]
 public partial class AnimationParser : Parser {
 	public const int
-		FUNCTION=1, IF=2, ELSE=3, WHILE=4, FROM=5, AT=6, IN=7, TO=8, NUMBER_TYPE=9, 
-		GROUP_TYPE=10, VECTOR_TYPE=11, OBJECT_TYPE=12, BOOLEAN_TYPE=13, SPHERE=14, 
-		CUBE=15, CYLINDER=16, PLANE=17, COLOR=18, ROTATE=19, MOVE=20, TRANSFORM=21, 
-		SET=22, TRUE=23, FALSE=24, LEFT_BRACE=25, RIGHT_BRACE=26, LEFT_BRACKET=27, 
-		RIGHT_BRACKET=28, LEFT_PAREN=29, RIGHT_PAREN=30, SEMICOLON=31, COLON=32, 
-		PAR_BEGIN=33, PAR_END=34, EQUALS=35, NOT_EQUALS=36, ADD=37, SUB=38, MUL=39, 
-		DIV=40, ASSIGN=41, LT=42, GT=43, LTE=44, GTE=45, AND=46, OR=47, NOT=48, 
-		NUMBER=49, VARIABLE_NAME=50, QUOTE=51, OBJECT=52, WHITE_SPACE=53;
+		WAIT=1, FUNCTION=2, IF=3, ELSE=4, WHILE=5, FROM=6, AT=7, IN=8, TO=9, NUMBER_TYPE=10, 
+		GROUP_TYPE=11, VECTOR_TYPE=12, OBJECT_TYPE=13, BOOLEAN_TYPE=14, SPHERE=15, 
+		CUBE=16, CYLINDER=17, PLANE=18, COLOR=19, ROTATE=20, MOVE=21, TRANSFORM=22, 
+		SET=23, TRUE=24, FALSE=25, LEFT_BRACE=26, RIGHT_BRACE=27, LEFT_BRACKET=28, 
+		RIGHT_BRACKET=29, LEFT_PAREN=30, RIGHT_PAREN=31, SEMICOLON=32, COLON=33, 
+		PAR_BEGIN=34, PAR_END=35, EQUALS=36, NOT_EQUALS=37, ADD=38, SUB=39, MUL=40, 
+		DIV=41, ASSIGN=42, LT=43, GT=44, LTE=45, GTE=46, AND=47, OR=48, NOT=49, 
+		NUMBER=50, VARIABLE_NAME=51, QUOTE=52, OBJECT=53, WHITE_SPACE=54, UNKNOWN=55;
 	public const int
 		RULE_objectInitValue = 0, RULE_vectorInitValue = 1, RULE_groupInitValue = 2, 
 		RULE_actionType = 3, RULE_objectValue = 4, RULE_vectorValue = 5, RULE_numberValue = 6, 
 		RULE_expression = 7, RULE_term = 8, RULE_factor = 9, RULE_variable = 10, 
 		RULE_module = 11, RULE_code = 12, RULE_instruction = 13, RULE_block = 14, 
 		RULE_parallel = 15, RULE_sequence = 16, RULE_command = 17, RULE_type = 18, 
-		RULE_argument = 19, RULE_function = 20, RULE_objectAssign = 21, RULE_groupAssign = 22, 
-		RULE_numberAssign = 23, RULE_vectorAssign = 24, RULE_booleanAssign = 25, 
-		RULE_allValues = 26, RULE_variableAssign = 27, RULE_altAssign = 28, RULE_assign = 29, 
-		RULE_comparingOperation = 30, RULE_comparing = 31, RULE_altBoolean = 32, 
-		RULE_exprBoolean = 33, RULE_termBoolean = 34, RULE_factBoolean = 35, RULE_booleanValue = 36, 
-		RULE_action = 37, RULE_if = 38, RULE_else = 39, RULE_while = 40, RULE_argValue = 41, 
-		RULE_arguments = 42, RULE_call = 43;
+		RULE_wait = 19, RULE_argument = 20, RULE_function = 21, RULE_objectAssign = 22, 
+		RULE_groupAssign = 23, RULE_numberAssign = 24, RULE_vectorAssign = 25, 
+		RULE_booleanAssign = 26, RULE_allValues = 27, RULE_variableAssign = 28, 
+		RULE_altAssign = 29, RULE_assign = 30, RULE_comparingOperation = 31, RULE_comparing = 32, 
+		RULE_altBoolean = 33, RULE_exprBoolean = 34, RULE_termBoolean = 35, RULE_factBoolean = 36, 
+		RULE_booleanValue = 37, RULE_action = 38, RULE_if = 39, RULE_else = 40, 
+		RULE_while = 41, RULE_argValue = 42, RULE_arguments = 43, RULE_call = 44;
 	public static readonly string[] ruleNames = {
 		"objectInitValue", "vectorInitValue", "groupInitValue", "actionType", 
 		"objectValue", "vectorValue", "numberValue", "expression", "term", "factor", 
 		"variable", "module", "code", "instruction", "block", "parallel", "sequence", 
-		"command", "type", "argument", "function", "objectAssign", "groupAssign", 
+		"command", "type", "wait", "argument", "function", "objectAssign", "groupAssign", 
 		"numberAssign", "vectorAssign", "booleanAssign", "allValues", "variableAssign", 
 		"altAssign", "assign", "comparingOperation", "comparing", "altBoolean", 
 		"exprBoolean", "termBoolean", "factBoolean", "booleanValue", "action", 
@@ -64,23 +64,23 @@ public partial class AnimationParser : Parser {
 	};
 
 	private static readonly string[] _LiteralNames = {
-		null, "'function'", "'if'", "'else'", "'while'", "'from'", "'at'", "'in'", 
-		"'to'", "'Number'", "'Group'", "'Vector'", "'Object'", "'Bool'", "'Sphere'", 
-		"'Cube'", "'Cylinder'", "'Plane'", "'Color'", "'rotate'", "'move'", "'transform'", 
-		"'set'", "'true'", "'false'", "'{'", "'}'", "'['", "']'", "'('", "')'", 
-		"';'", "','", "'<>'", "'</>'", "'=='", "'!='", "'+'", "'-'", "'*'", "'/'", 
-		"'='", "'<'", "'>'", "'<='", "'>='", "'&&'", "'||'", "'!'", null, null, 
-		"'\"'"
+		null, "'wait'", "'function'", "'if'", "'else'", "'while'", "'from'", "'at'", 
+		"'in'", "'to'", "'Number'", "'Group'", "'Vector'", "'Object'", "'Bool'", 
+		"'Sphere'", "'Cube'", "'Cylinder'", "'Plane'", "'Color'", "'rotate'", 
+		"'move'", "'transform'", "'set'", "'true'", "'false'", "'{'", "'}'", "'['", 
+		"']'", "'('", "')'", "';'", "','", "'<>'", "'</>'", "'=='", "'!='", "'+'", 
+		"'-'", "'*'", "'/'", "'='", "'<'", "'>'", "'<='", "'>='", "'&&'", "'||'", 
+		"'!'", null, null, "'\"'"
 	};
 	private static readonly string[] _SymbolicNames = {
-		null, "FUNCTION", "IF", "ELSE", "WHILE", "FROM", "AT", "IN", "TO", "NUMBER_TYPE", 
-		"GROUP_TYPE", "VECTOR_TYPE", "OBJECT_TYPE", "BOOLEAN_TYPE", "SPHERE", 
-		"CUBE", "CYLINDER", "PLANE", "COLOR", "ROTATE", "MOVE", "TRANSFORM", "SET", 
-		"TRUE", "FALSE", "LEFT_BRACE", "RIGHT_BRACE", "LEFT_BRACKET", "RIGHT_BRACKET", 
+		null, "WAIT", "FUNCTION", "IF", "ELSE", "WHILE", "FROM", "AT", "IN", "TO", 
+		"NUMBER_TYPE", "GROUP_TYPE", "VECTOR_TYPE", "OBJECT_TYPE", "BOOLEAN_TYPE", 
+		"SPHERE", "CUBE", "CYLINDER", "PLANE", "COLOR", "ROTATE", "MOVE", "TRANSFORM", 
+		"SET", "TRUE", "FALSE", "LEFT_BRACE", "RIGHT_BRACE", "LEFT_BRACKET", "RIGHT_BRACKET", 
 		"LEFT_PAREN", "RIGHT_PAREN", "SEMICOLON", "COLON", "PAR_BEGIN", "PAR_END", 
 		"EQUALS", "NOT_EQUALS", "ADD", "SUB", "MUL", "DIV", "ASSIGN", "LT", "GT", 
 		"LTE", "GTE", "AND", "OR", "NOT", "NUMBER", "VARIABLE_NAME", "QUOTE", 
-		"OBJECT", "WHITE_SPACE"
+		"OBJECT", "WHITE_SPACE", "UNKNOWN"
 	};
 	public static readonly IVocabulary DefaultVocabulary = new Vocabulary(_LiteralNames, _SymbolicNames);
 
@@ -166,7 +166,7 @@ public partial class AnimationParser : Parser {
 		try {
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 88;
+			State = 90;
 			_la = _input.La(1);
 			if ( !((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << SPHERE) | (1L << CUBE) | (1L << CYLINDER) | (1L << PLANE) | (1L << OBJECT))) != 0)) ) {
 			_errHandler.RecoverInline(this);
@@ -234,13 +234,13 @@ public partial class AnimationParser : Parser {
 		try {
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 90; Match(LEFT_BRACKET);
-			State = 91; _localctx.x = numberValue();
-			State = 92; Match(COLON);
-			State = 93; _localctx.y = numberValue();
+			State = 92; Match(LEFT_BRACKET);
+			State = 93; _localctx.x = numberValue();
 			State = 94; Match(COLON);
-			State = 95; _localctx.z = numberValue();
-			State = 96; Match(RIGHT_BRACKET);
+			State = 95; _localctx.y = numberValue();
+			State = 96; Match(COLON);
+			State = 97; _localctx.z = numberValue();
+			State = 98; Match(RIGHT_BRACKET);
 			}
 		}
 		catch (RecognitionException re) {
@@ -295,49 +295,49 @@ public partial class AnimationParser : Parser {
 		EnterRule(_localctx, 4, RULE_groupInitValue);
 		int _la;
 		try {
-			State = 113;
+			State = 115;
 			_errHandler.Sync(this);
 			switch ( Interpreter.AdaptivePredict(_input,2,_ctx) ) {
 			case 1:
 				EnterOuterAlt(_localctx, 1);
 				{
-				State = 98; Match(LEFT_BRACKET);
-				State = 100;
+				State = 100; Match(LEFT_BRACKET);
+				State = 102;
 				_errHandler.Sync(this);
 				_la = _input.La(1);
 				if ((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << SPHERE) | (1L << CUBE) | (1L << CYLINDER) | (1L << PLANE) | (1L << LEFT_BRACKET) | (1L << VARIABLE_NAME) | (1L << OBJECT))) != 0)) {
 					{
-					State = 99; _localctx._objectValue = objectValue();
+					State = 101; _localctx._objectValue = objectValue();
 					_localctx._args.Add(_localctx._objectValue);
 					}
 				}
 
-				State = 102; Match(RIGHT_BRACKET);
+				State = 104; Match(RIGHT_BRACKET);
 				}
 				break;
 
 			case 2:
 				EnterOuterAlt(_localctx, 2);
 				{
-				State = 103; Match(LEFT_BRACKET);
-				State = 104; _localctx._objectValue = objectValue();
+				State = 105; Match(LEFT_BRACKET);
+				State = 106; _localctx._objectValue = objectValue();
 				_localctx._args.Add(_localctx._objectValue);
-				State = 107;
+				State = 109;
 				_errHandler.Sync(this);
 				_la = _input.La(1);
 				do {
 					{
 					{
-					State = 105; Match(COLON);
-					State = 106; _localctx._objectValue = objectValue();
+					State = 107; Match(COLON);
+					State = 108; _localctx._objectValue = objectValue();
 					_localctx._args.Add(_localctx._objectValue);
 					}
 					}
-					State = 109;
+					State = 111;
 					_errHandler.Sync(this);
 					_la = _input.La(1);
 				} while ( _la==COLON );
-				State = 111; Match(RIGHT_BRACKET);
+				State = 113; Match(RIGHT_BRACKET);
 				}
 				break;
 			}
@@ -385,7 +385,7 @@ public partial class AnimationParser : Parser {
 		try {
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 115;
+			State = 117;
 			_la = _input.La(1);
 			if ( !((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << ROTATE) | (1L << MOVE) | (1L << TRANSFORM))) != 0)) ) {
 			_errHandler.RecoverInline(this);
@@ -445,13 +445,13 @@ public partial class AnimationParser : Parser {
 		ObjectValueContext _localctx = new ObjectValueContext(_ctx, State);
 		EnterRule(_localctx, 8, RULE_objectValue);
 		try {
-			State = 120;
+			State = 122;
 			_errHandler.Sync(this);
 			switch (_input.La(1)) {
 			case VARIABLE_NAME:
 				EnterOuterAlt(_localctx, 1);
 				{
-				State = 117; variable();
+				State = 119; variable();
 				}
 				break;
 			case SPHERE:
@@ -461,13 +461,13 @@ public partial class AnimationParser : Parser {
 			case OBJECT:
 				EnterOuterAlt(_localctx, 2);
 				{
-				State = 118; objectInitValue();
+				State = 120; objectInitValue();
 				}
 				break;
 			case LEFT_BRACKET:
 				EnterOuterAlt(_localctx, 3);
 				{
-				State = 119; groupInitValue();
+				State = 121; groupInitValue();
 				}
 				break;
 			default:
@@ -517,19 +517,19 @@ public partial class AnimationParser : Parser {
 		VectorValueContext _localctx = new VectorValueContext(_ctx, State);
 		EnterRule(_localctx, 10, RULE_vectorValue);
 		try {
-			State = 124;
+			State = 126;
 			_errHandler.Sync(this);
 			switch (_input.La(1)) {
 			case VARIABLE_NAME:
 				EnterOuterAlt(_localctx, 1);
 				{
-				State = 122; variable();
+				State = 124; variable();
 				}
 				break;
 			case LEFT_BRACKET:
 				EnterOuterAlt(_localctx, 2);
 				{
-				State = 123; vectorInitValue();
+				State = 125; vectorInitValue();
 				}
 				break;
 			default:
@@ -578,7 +578,7 @@ public partial class AnimationParser : Parser {
 		try {
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 126; expression(0);
+			State = 128; expression(0);
 			}
 		}
 		catch (RecognitionException re) {
@@ -638,10 +638,10 @@ public partial class AnimationParser : Parser {
 			EnterOuterAlt(_localctx, 1);
 			{
 			{
-			State = 129; term(0);
+			State = 131; term(0);
 			}
 			_ctx.stop = _input.Lt(-1);
-			State = 139;
+			State = 141;
 			_errHandler.Sync(this);
 			_alt = Interpreter.AdaptivePredict(_input,6,_ctx);
 			while ( _alt!=2 && _alt!=global::Antlr4.Runtime.Atn.ATN.InvalidAltNumber ) {
@@ -649,17 +649,17 @@ public partial class AnimationParser : Parser {
 					if ( _parseListeners!=null ) TriggerExitRuleEvent();
 					_prevctx = _localctx;
 					{
-					State = 137;
+					State = 139;
 					_errHandler.Sync(this);
 					switch ( Interpreter.AdaptivePredict(_input,5,_ctx) ) {
 					case 1:
 						{
 						_localctx = new ExpressionContext(_parentctx, _parentState);
 						PushNewRecursionContext(_localctx, _startState, RULE_expression);
-						State = 131;
+						State = 133;
 						if (!(Precpred(_ctx, 2))) throw new FailedPredicateException(this, "Precpred(_ctx, 2)");
-						State = 132; Match(ADD);
-						State = 133; term(0);
+						State = 134; Match(ADD);
+						State = 135; term(0);
 						}
 						break;
 
@@ -667,16 +667,16 @@ public partial class AnimationParser : Parser {
 						{
 						_localctx = new ExpressionContext(_parentctx, _parentState);
 						PushNewRecursionContext(_localctx, _startState, RULE_expression);
-						State = 134;
+						State = 136;
 						if (!(Precpred(_ctx, 1))) throw new FailedPredicateException(this, "Precpred(_ctx, 1)");
-						State = 135; Match(SUB);
-						State = 136; term(0);
+						State = 137; Match(SUB);
+						State = 138; term(0);
 						}
 						break;
 					}
 					} 
 				}
-				State = 141;
+				State = 143;
 				_errHandler.Sync(this);
 				_alt = Interpreter.AdaptivePredict(_input,6,_ctx);
 			}
@@ -739,10 +739,10 @@ public partial class AnimationParser : Parser {
 			EnterOuterAlt(_localctx, 1);
 			{
 			{
-			State = 143; factor();
+			State = 145; factor();
 			}
 			_ctx.stop = _input.Lt(-1);
-			State = 153;
+			State = 155;
 			_errHandler.Sync(this);
 			_alt = Interpreter.AdaptivePredict(_input,8,_ctx);
 			while ( _alt!=2 && _alt!=global::Antlr4.Runtime.Atn.ATN.InvalidAltNumber ) {
@@ -750,17 +750,17 @@ public partial class AnimationParser : Parser {
 					if ( _parseListeners!=null ) TriggerExitRuleEvent();
 					_prevctx = _localctx;
 					{
-					State = 151;
+					State = 153;
 					_errHandler.Sync(this);
 					switch ( Interpreter.AdaptivePredict(_input,7,_ctx) ) {
 					case 1:
 						{
 						_localctx = new TermContext(_parentctx, _parentState);
 						PushNewRecursionContext(_localctx, _startState, RULE_term);
-						State = 145;
+						State = 147;
 						if (!(Precpred(_ctx, 2))) throw new FailedPredicateException(this, "Precpred(_ctx, 2)");
-						State = 146; Match(MUL);
-						State = 147; factor();
+						State = 148; Match(MUL);
+						State = 149; factor();
 						}
 						break;
 
@@ -768,16 +768,16 @@ public partial class AnimationParser : Parser {
 						{
 						_localctx = new TermContext(_parentctx, _parentState);
 						PushNewRecursionContext(_localctx, _startState, RULE_term);
-						State = 148;
+						State = 150;
 						if (!(Precpred(_ctx, 1))) throw new FailedPredicateException(this, "Precpred(_ctx, 1)");
-						State = 149; Match(DIV);
-						State = 150; factor();
+						State = 151; Match(DIV);
+						State = 152; factor();
 						}
 						break;
 					}
 					} 
 				}
-				State = 155;
+				State = 157;
 				_errHandler.Sync(this);
 				_alt = Interpreter.AdaptivePredict(_input,8,_ctx);
 			}
@@ -830,34 +830,34 @@ public partial class AnimationParser : Parser {
 		FactorContext _localctx = new FactorContext(_ctx, State);
 		EnterRule(_localctx, 18, RULE_factor);
 		try {
-			State = 164;
+			State = 166;
 			_errHandler.Sync(this);
 			switch (_input.La(1)) {
 			case NUMBER:
 				EnterOuterAlt(_localctx, 1);
 				{
-				State = 156; Match(NUMBER);
+				State = 158; Match(NUMBER);
 				}
 				break;
 			case SUB:
 				EnterOuterAlt(_localctx, 2);
 				{
-				State = 157; Match(SUB);
-				State = 158; Match(NUMBER);
+				State = 159; Match(SUB);
+				State = 160; Match(NUMBER);
 				}
 				break;
 			case VARIABLE_NAME:
 				EnterOuterAlt(_localctx, 3);
 				{
-				State = 159; variable();
+				State = 161; variable();
 				}
 				break;
 			case LEFT_PAREN:
 				EnterOuterAlt(_localctx, 4);
 				{
-				State = 160; Match(LEFT_PAREN);
-				State = 161; expression(0);
-				State = 162; Match(RIGHT_PAREN);
+				State = 162; Match(LEFT_PAREN);
+				State = 163; expression(0);
+				State = 164; Match(RIGHT_PAREN);
 				}
 				break;
 			default:
@@ -904,7 +904,7 @@ public partial class AnimationParser : Parser {
 		try {
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 166; Match(VARIABLE_NAME);
+			State = 168; Match(VARIABLE_NAME);
 			}
 		}
 		catch (RecognitionException re) {
@@ -956,21 +956,21 @@ public partial class AnimationParser : Parser {
 		try {
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 169;
+			State = 171;
 			_errHandler.Sync(this);
 			_la = _input.La(1);
 			do {
 				{
 				{
-				State = 168; _localctx._code = code();
+				State = 170; _localctx._code = code();
 				_localctx._instr.Add(_localctx._code);
 				}
 				}
-				State = 171;
+				State = 173;
 				_errHandler.Sync(this);
 				_la = _input.La(1);
-			} while ( (((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << FUNCTION) | (1L << IF) | (1L << WHILE) | (1L << NUMBER_TYPE) | (1L << VECTOR_TYPE) | (1L << OBJECT_TYPE) | (1L << ROTATE) | (1L << MOVE) | (1L << TRANSFORM) | (1L << LEFT_BRACE) | (1L << PAR_BEGIN) | (1L << VARIABLE_NAME))) != 0) );
-			State = 173; Match(Eof);
+			} while ( (((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << WAIT) | (1L << FUNCTION) | (1L << IF) | (1L << WHILE) | (1L << NUMBER_TYPE) | (1L << VECTOR_TYPE) | (1L << OBJECT_TYPE) | (1L << ROTATE) | (1L << MOVE) | (1L << TRANSFORM) | (1L << LEFT_BRACE) | (1L << PAR_BEGIN) | (1L << VARIABLE_NAME))) != 0) );
+			State = 175; Match(Eof);
 			}
 		}
 		catch (RecognitionException re) {
@@ -1016,15 +1016,16 @@ public partial class AnimationParser : Parser {
 		CodeContext _localctx = new CodeContext(_ctx, State);
 		EnterRule(_localctx, 24, RULE_code);
 		try {
-			State = 177;
+			State = 179;
 			_errHandler.Sync(this);
 			switch (_input.La(1)) {
 			case FUNCTION:
 				EnterOuterAlt(_localctx, 1);
 				{
-				State = 175; function();
+				State = 177; function();
 				}
 				break;
+			case WAIT:
 			case IF:
 			case WHILE:
 			case NUMBER_TYPE:
@@ -1038,7 +1039,7 @@ public partial class AnimationParser : Parser {
 			case VARIABLE_NAME:
 				EnterOuterAlt(_localctx, 2);
 				{
-				State = 176; instruction();
+				State = 178; instruction();
 				}
 				break;
 			default:
@@ -1094,16 +1095,17 @@ public partial class AnimationParser : Parser {
 		InstructionContext _localctx = new InstructionContext(_ctx, State);
 		EnterRule(_localctx, 26, RULE_instruction);
 		try {
-			State = 183;
+			State = 185;
 			_errHandler.Sync(this);
 			switch (_input.La(1)) {
 			case LEFT_BRACE:
 			case PAR_BEGIN:
 				EnterOuterAlt(_localctx, 1);
 				{
-				State = 179; block();
+				State = 181; block();
 				}
 				break;
+			case WAIT:
 			case NUMBER_TYPE:
 			case VECTOR_TYPE:
 			case OBJECT_TYPE:
@@ -1113,19 +1115,19 @@ public partial class AnimationParser : Parser {
 			case VARIABLE_NAME:
 				EnterOuterAlt(_localctx, 2);
 				{
-				State = 180; command();
+				State = 182; command();
 				}
 				break;
 			case IF:
 				EnterOuterAlt(_localctx, 3);
 				{
-				State = 181; @if();
+				State = 183; @if();
 				}
 				break;
 			case WHILE:
 				EnterOuterAlt(_localctx, 4);
 				{
-				State = 182; @while();
+				State = 184; @while();
 				}
 				break;
 			default:
@@ -1175,19 +1177,19 @@ public partial class AnimationParser : Parser {
 		BlockContext _localctx = new BlockContext(_ctx, State);
 		EnterRule(_localctx, 28, RULE_block);
 		try {
-			State = 187;
+			State = 189;
 			_errHandler.Sync(this);
 			switch (_input.La(1)) {
 			case PAR_BEGIN:
 				EnterOuterAlt(_localctx, 1);
 				{
-				State = 185; parallel();
+				State = 187; parallel();
 				}
 				break;
 			case LEFT_BRACE:
 				EnterOuterAlt(_localctx, 2);
 				{
-				State = 186; sequence();
+				State = 188; sequence();
 				}
 				break;
 			default:
@@ -1244,22 +1246,22 @@ public partial class AnimationParser : Parser {
 		try {
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 189; Match(PAR_BEGIN);
-			State = 193;
+			State = 191; Match(PAR_BEGIN);
+			State = 195;
 			_errHandler.Sync(this);
 			_la = _input.La(1);
-			while ((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << IF) | (1L << WHILE) | (1L << NUMBER_TYPE) | (1L << VECTOR_TYPE) | (1L << OBJECT_TYPE) | (1L << ROTATE) | (1L << MOVE) | (1L << TRANSFORM) | (1L << LEFT_BRACE) | (1L << PAR_BEGIN) | (1L << VARIABLE_NAME))) != 0)) {
+			while ((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << WAIT) | (1L << IF) | (1L << WHILE) | (1L << NUMBER_TYPE) | (1L << VECTOR_TYPE) | (1L << OBJECT_TYPE) | (1L << ROTATE) | (1L << MOVE) | (1L << TRANSFORM) | (1L << LEFT_BRACE) | (1L << PAR_BEGIN) | (1L << VARIABLE_NAME))) != 0)) {
 				{
 				{
-				State = 190; _localctx._instruction = instruction();
+				State = 192; _localctx._instruction = instruction();
 				_localctx._instr.Add(_localctx._instruction);
 				}
 				}
-				State = 195;
+				State = 197;
 				_errHandler.Sync(this);
 				_la = _input.La(1);
 			}
-			State = 196; Match(PAR_END);
+			State = 198; Match(PAR_END);
 			}
 		}
 		catch (RecognitionException re) {
@@ -1312,22 +1314,22 @@ public partial class AnimationParser : Parser {
 		try {
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 198; Match(LEFT_BRACE);
-			State = 202;
+			State = 200; Match(LEFT_BRACE);
+			State = 204;
 			_errHandler.Sync(this);
 			_la = _input.La(1);
-			while ((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << IF) | (1L << WHILE) | (1L << NUMBER_TYPE) | (1L << VECTOR_TYPE) | (1L << OBJECT_TYPE) | (1L << ROTATE) | (1L << MOVE) | (1L << TRANSFORM) | (1L << LEFT_BRACE) | (1L << PAR_BEGIN) | (1L << VARIABLE_NAME))) != 0)) {
+			while ((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << WAIT) | (1L << IF) | (1L << WHILE) | (1L << NUMBER_TYPE) | (1L << VECTOR_TYPE) | (1L << OBJECT_TYPE) | (1L << ROTATE) | (1L << MOVE) | (1L << TRANSFORM) | (1L << LEFT_BRACE) | (1L << PAR_BEGIN) | (1L << VARIABLE_NAME))) != 0)) {
 				{
 				{
-				State = 199; _localctx._instruction = instruction();
+				State = 201; _localctx._instruction = instruction();
 				_localctx._instr.Add(_localctx._instruction);
 				}
 				}
-				State = 204;
+				State = 206;
 				_errHandler.Sync(this);
 				_la = _input.La(1);
 			}
-			State = 205; Match(RIGHT_BRACE);
+			State = 207; Match(RIGHT_BRACE);
 			}
 		}
 		catch (RecognitionException re) {
@@ -1351,6 +1353,9 @@ public partial class AnimationParser : Parser {
 		}
 		public CallContext call() {
 			return GetRuleContext<CallContext>(0);
+		}
+		public WaitContext wait() {
+			return GetRuleContext<WaitContext>(0);
 		}
 		public CommandContext(ParserRuleContext parent, int invokingState)
 			: base(parent, invokingState)
@@ -1377,29 +1382,38 @@ public partial class AnimationParser : Parser {
 		CommandContext _localctx = new CommandContext(_ctx, State);
 		EnterRule(_localctx, 34, RULE_command);
 		try {
-			State = 214;
+			State = 221;
 			_errHandler.Sync(this);
 			switch ( Interpreter.AdaptivePredict(_input,16,_ctx) ) {
 			case 1:
 				EnterOuterAlt(_localctx, 1);
 				{
-				State = 207; assign();
-				State = 208; Match(SEMICOLON);
+				State = 209; assign();
+				State = 210; Match(SEMICOLON);
 				}
 				break;
 
 			case 2:
 				EnterOuterAlt(_localctx, 2);
 				{
-				State = 210; action();
-				State = 211; Match(SEMICOLON);
+				State = 212; action();
+				State = 213; Match(SEMICOLON);
 				}
 				break;
 
 			case 3:
 				EnterOuterAlt(_localctx, 3);
 				{
-				State = 213; call();
+				State = 215; call();
+				State = 216; Match(SEMICOLON);
+				}
+				break;
+
+			case 4:
+				EnterOuterAlt(_localctx, 4);
+				{
+				State = 218; wait();
+				State = 219; Match(SEMICOLON);
 				}
 				break;
 			}
@@ -1448,7 +1462,7 @@ public partial class AnimationParser : Parser {
 		try {
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 216;
+			State = 223;
 			_la = _input.La(1);
 			if ( !((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << NUMBER_TYPE) | (1L << VECTOR_TYPE) | (1L << OBJECT_TYPE) | (1L << BOOLEAN_TYPE))) != 0)) ) {
 			_errHandler.RecoverInline(this);
@@ -1460,6 +1474,53 @@ public partial class AnimationParser : Parser {
 				_errHandler.ReportMatch(this);
 				Consume();
 			}
+			}
+		}
+		catch (RecognitionException re) {
+			_localctx.exception = re;
+			_errHandler.ReportError(this, re);
+			_errHandler.Recover(this, re);
+		}
+		finally {
+			ExitRule();
+		}
+		return _localctx;
+	}
+
+	public partial class WaitContext : ParserRuleContext {
+		public ITerminalNode WAIT() { return GetToken(AnimationParser.WAIT, 0); }
+		public NumberValueContext numberValue() {
+			return GetRuleContext<NumberValueContext>(0);
+		}
+		public WaitContext(ParserRuleContext parent, int invokingState)
+			: base(parent, invokingState)
+		{
+		}
+		public override int RuleIndex { get { return RULE_wait; } }
+		public override void EnterRule(IParseTreeListener listener) {
+			IAnimationListener typedListener = listener as IAnimationListener;
+			if (typedListener != null) typedListener.EnterWait(this);
+		}
+		public override void ExitRule(IParseTreeListener listener) {
+			IAnimationListener typedListener = listener as IAnimationListener;
+			if (typedListener != null) typedListener.ExitWait(this);
+		}
+		public override TResult Accept<TResult>(IParseTreeVisitor<TResult> visitor) {
+			IAnimationVisitor<TResult> typedVisitor = visitor as IAnimationVisitor<TResult>;
+			if (typedVisitor != null) return typedVisitor.VisitWait(this);
+			else return visitor.VisitChildren(this);
+		}
+	}
+
+	[RuleVersion(0)]
+	public WaitContext wait() {
+		WaitContext _localctx = new WaitContext(_ctx, State);
+		EnterRule(_localctx, 38, RULE_wait);
+		try {
+			EnterOuterAlt(_localctx, 1);
+			{
+			State = 225; Match(WAIT);
+			State = 226; numberValue();
 			}
 		}
 		catch (RecognitionException re) {
@@ -1501,12 +1562,12 @@ public partial class AnimationParser : Parser {
 	[RuleVersion(0)]
 	public ArgumentContext argument() {
 		ArgumentContext _localctx = new ArgumentContext(_ctx, State);
-		EnterRule(_localctx, 38, RULE_argument);
+		EnterRule(_localctx, 40, RULE_argument);
 		try {
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 218; type();
-			State = 219; Match(VARIABLE_NAME);
+			State = 228; type();
+			State = 229; Match(VARIABLE_NAME);
 			}
 		}
 		catch (RecognitionException re) {
@@ -1565,41 +1626,41 @@ public partial class AnimationParser : Parser {
 	[RuleVersion(0)]
 	public FunctionContext function() {
 		FunctionContext _localctx = new FunctionContext(_ctx, State);
-		EnterRule(_localctx, 40, RULE_function);
+		EnterRule(_localctx, 42, RULE_function);
 		int _la;
 		try {
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 221; Match(FUNCTION);
-			State = 222; _localctx.func_name = Match(VARIABLE_NAME);
-			State = 223; Match(LEFT_PAREN);
-			State = 232;
+			State = 231; Match(FUNCTION);
+			State = 232; _localctx.func_name = Match(VARIABLE_NAME);
+			State = 233; Match(LEFT_PAREN);
+			State = 242;
 			_errHandler.Sync(this);
 			_la = _input.La(1);
 			if ((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << NUMBER_TYPE) | (1L << VECTOR_TYPE) | (1L << OBJECT_TYPE) | (1L << BOOLEAN_TYPE))) != 0)) {
 				{
-				State = 224; _localctx._argument = argument();
+				State = 234; _localctx._argument = argument();
 				_localctx._args.Add(_localctx._argument);
-				State = 229;
+				State = 239;
 				_errHandler.Sync(this);
 				_la = _input.La(1);
 				while (_la==COLON) {
 					{
 					{
-					State = 225; Match(COLON);
-					State = 226; _localctx._argument = argument();
+					State = 235; Match(COLON);
+					State = 236; _localctx._argument = argument();
 					_localctx._args.Add(_localctx._argument);
 					}
 					}
-					State = 231;
+					State = 241;
 					_errHandler.Sync(this);
 					_la = _input.La(1);
 				}
 				}
 			}
 
-			State = 234; Match(RIGHT_PAREN);
-			State = 235; _localctx.body = sequence();
+			State = 244; Match(RIGHT_PAREN);
+			State = 245; _localctx.body = sequence();
 			}
 		}
 		catch (RecognitionException re) {
@@ -1645,14 +1706,14 @@ public partial class AnimationParser : Parser {
 	[RuleVersion(0)]
 	public ObjectAssignContext objectAssign() {
 		ObjectAssignContext _localctx = new ObjectAssignContext(_ctx, State);
-		EnterRule(_localctx, 42, RULE_objectAssign);
+		EnterRule(_localctx, 44, RULE_objectAssign);
 		try {
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 237; Match(OBJECT_TYPE);
-			State = 238; _localctx.name = Match(VARIABLE_NAME);
-			State = 239; Match(ASSIGN);
-			State = 240; _localctx.value = objectInitValue();
+			State = 247; Match(OBJECT_TYPE);
+			State = 248; _localctx.name = Match(VARIABLE_NAME);
+			State = 249; Match(ASSIGN);
+			State = 250; _localctx.value = objectInitValue();
 			}
 		}
 		catch (RecognitionException re) {
@@ -1698,14 +1759,14 @@ public partial class AnimationParser : Parser {
 	[RuleVersion(0)]
 	public GroupAssignContext groupAssign() {
 		GroupAssignContext _localctx = new GroupAssignContext(_ctx, State);
-		EnterRule(_localctx, 44, RULE_groupAssign);
+		EnterRule(_localctx, 46, RULE_groupAssign);
 		try {
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 242; Match(OBJECT_TYPE);
-			State = 243; _localctx.name = Match(VARIABLE_NAME);
-			State = 244; Match(ASSIGN);
-			State = 245; _localctx.value = groupInitValue();
+			State = 252; Match(OBJECT_TYPE);
+			State = 253; _localctx.name = Match(VARIABLE_NAME);
+			State = 254; Match(ASSIGN);
+			State = 255; _localctx.value = groupInitValue();
 			}
 		}
 		catch (RecognitionException re) {
@@ -1751,14 +1812,14 @@ public partial class AnimationParser : Parser {
 	[RuleVersion(0)]
 	public NumberAssignContext numberAssign() {
 		NumberAssignContext _localctx = new NumberAssignContext(_ctx, State);
-		EnterRule(_localctx, 46, RULE_numberAssign);
+		EnterRule(_localctx, 48, RULE_numberAssign);
 		try {
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 247; Match(NUMBER_TYPE);
-			State = 248; _localctx.name = Match(VARIABLE_NAME);
-			State = 249; Match(ASSIGN);
-			State = 250; _localctx.value = numberValue();
+			State = 257; Match(NUMBER_TYPE);
+			State = 258; _localctx.name = Match(VARIABLE_NAME);
+			State = 259; Match(ASSIGN);
+			State = 260; _localctx.value = numberValue();
 			}
 		}
 		catch (RecognitionException re) {
@@ -1804,14 +1865,14 @@ public partial class AnimationParser : Parser {
 	[RuleVersion(0)]
 	public VectorAssignContext vectorAssign() {
 		VectorAssignContext _localctx = new VectorAssignContext(_ctx, State);
-		EnterRule(_localctx, 48, RULE_vectorAssign);
+		EnterRule(_localctx, 50, RULE_vectorAssign);
 		try {
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 252; Match(VECTOR_TYPE);
-			State = 253; _localctx.name = Match(VARIABLE_NAME);
-			State = 254; Match(ASSIGN);
-			State = 255; _localctx.value = vectorInitValue();
+			State = 262; Match(VECTOR_TYPE);
+			State = 263; _localctx.name = Match(VARIABLE_NAME);
+			State = 264; Match(ASSIGN);
+			State = 265; _localctx.value = vectorInitValue();
 			}
 		}
 		catch (RecognitionException re) {
@@ -1857,14 +1918,14 @@ public partial class AnimationParser : Parser {
 	[RuleVersion(0)]
 	public BooleanAssignContext booleanAssign() {
 		BooleanAssignContext _localctx = new BooleanAssignContext(_ctx, State);
-		EnterRule(_localctx, 50, RULE_booleanAssign);
+		EnterRule(_localctx, 52, RULE_booleanAssign);
 		try {
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 257; Match(BOOLEAN_TYPE);
-			State = 258; _localctx.name = Match(VARIABLE_NAME);
-			State = 259; Match(ASSIGN);
-			State = 260; _localctx.value = booleanValue();
+			State = 267; Match(BOOLEAN_TYPE);
+			State = 268; _localctx.name = Match(VARIABLE_NAME);
+			State = 269; Match(ASSIGN);
+			State = 270; _localctx.value = booleanValue();
 			}
 		}
 		catch (RecognitionException re) {
@@ -1917,43 +1978,43 @@ public partial class AnimationParser : Parser {
 	[RuleVersion(0)]
 	public AllValuesContext allValues() {
 		AllValuesContext _localctx = new AllValuesContext(_ctx, State);
-		EnterRule(_localctx, 52, RULE_allValues);
+		EnterRule(_localctx, 54, RULE_allValues);
 		try {
-			State = 267;
+			State = 277;
 			_errHandler.Sync(this);
 			switch ( Interpreter.AdaptivePredict(_input,19,_ctx) ) {
 			case 1:
 				EnterOuterAlt(_localctx, 1);
 				{
-				State = 262; objectInitValue();
+				State = 272; objectInitValue();
 				}
 				break;
 
 			case 2:
 				EnterOuterAlt(_localctx, 2);
 				{
-				State = 263; groupInitValue();
+				State = 273; groupInitValue();
 				}
 				break;
 
 			case 3:
 				EnterOuterAlt(_localctx, 3);
 				{
-				State = 264; numberValue();
+				State = 274; numberValue();
 				}
 				break;
 
 			case 4:
 				EnterOuterAlt(_localctx, 4);
 				{
-				State = 265; vectorInitValue();
+				State = 275; vectorInitValue();
 				}
 				break;
 
 			case 5:
 				EnterOuterAlt(_localctx, 5);
 				{
-				State = 266; booleanValue();
+				State = 276; booleanValue();
 				}
 				break;
 			}
@@ -1999,13 +2060,13 @@ public partial class AnimationParser : Parser {
 	[RuleVersion(0)]
 	public VariableAssignContext variableAssign() {
 		VariableAssignContext _localctx = new VariableAssignContext(_ctx, State);
-		EnterRule(_localctx, 54, RULE_variableAssign);
+		EnterRule(_localctx, 56, RULE_variableAssign);
 		try {
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 269; Match(VARIABLE_NAME);
-			State = 270; Match(ASSIGN);
-			State = 271; _localctx.value = allValues();
+			State = 279; Match(VARIABLE_NAME);
+			State = 280; Match(ASSIGN);
+			State = 281; _localctx.value = allValues();
 			}
 		}
 		catch (RecognitionException re) {
@@ -2058,43 +2119,43 @@ public partial class AnimationParser : Parser {
 	[RuleVersion(0)]
 	public AltAssignContext altAssign() {
 		AltAssignContext _localctx = new AltAssignContext(_ctx, State);
-		EnterRule(_localctx, 56, RULE_altAssign);
+		EnterRule(_localctx, 58, RULE_altAssign);
 		try {
-			State = 278;
+			State = 288;
 			_errHandler.Sync(this);
 			switch ( Interpreter.AdaptivePredict(_input,20,_ctx) ) {
 			case 1:
 				EnterOuterAlt(_localctx, 1);
 				{
-				State = 273; objectAssign();
+				State = 283; objectAssign();
 				}
 				break;
 
 			case 2:
 				EnterOuterAlt(_localctx, 2);
 				{
-				State = 274; groupAssign();
+				State = 284; groupAssign();
 				}
 				break;
 
 			case 3:
 				EnterOuterAlt(_localctx, 3);
 				{
-				State = 275; numberAssign();
+				State = 285; numberAssign();
 				}
 				break;
 
 			case 4:
 				EnterOuterAlt(_localctx, 4);
 				{
-				State = 276; vectorAssign();
+				State = 286; vectorAssign();
 				}
 				break;
 
 			case 5:
 				EnterOuterAlt(_localctx, 5);
 				{
-				State = 277; variableAssign();
+				State = 287; variableAssign();
 				}
 				break;
 			}
@@ -2138,11 +2199,11 @@ public partial class AnimationParser : Parser {
 	[RuleVersion(0)]
 	public AssignContext assign() {
 		AssignContext _localctx = new AssignContext(_ctx, State);
-		EnterRule(_localctx, 58, RULE_assign);
+		EnterRule(_localctx, 60, RULE_assign);
 		try {
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 280; _localctx.content = altAssign();
+			State = 290; _localctx.content = altAssign();
 			}
 		}
 		catch (RecognitionException re) {
@@ -2186,12 +2247,12 @@ public partial class AnimationParser : Parser {
 	[RuleVersion(0)]
 	public ComparingOperationContext comparingOperation() {
 		ComparingOperationContext _localctx = new ComparingOperationContext(_ctx, State);
-		EnterRule(_localctx, 60, RULE_comparingOperation);
+		EnterRule(_localctx, 62, RULE_comparingOperation);
 		int _la;
 		try {
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 282;
+			State = 292;
 			_la = _input.La(1);
 			if ( !((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << EQUALS) | (1L << NOT_EQUALS) | (1L << LT) | (1L << GT) | (1L << LTE) | (1L << GTE))) != 0)) ) {
 			_errHandler.RecoverInline(this);
@@ -2252,13 +2313,13 @@ public partial class AnimationParser : Parser {
 	[RuleVersion(0)]
 	public ComparingContext comparing() {
 		ComparingContext _localctx = new ComparingContext(_ctx, State);
-		EnterRule(_localctx, 62, RULE_comparing);
+		EnterRule(_localctx, 64, RULE_comparing);
 		try {
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 284; _localctx.left = numberValue();
-			State = 285; _localctx.op = comparingOperation();
-			State = 286; _localctx.right = numberValue();
+			State = 294; _localctx.left = numberValue();
+			State = 295; _localctx.op = comparingOperation();
+			State = 296; _localctx.right = numberValue();
 			}
 		}
 		catch (RecognitionException re) {
@@ -2306,9 +2367,9 @@ public partial class AnimationParser : Parser {
 	[RuleVersion(0)]
 	public AltBooleanContext altBoolean() {
 		AltBooleanContext _localctx = new AltBooleanContext(_ctx, State);
-		EnterRule(_localctx, 64, RULE_altBoolean);
+		EnterRule(_localctx, 66, RULE_altBoolean);
 		try {
-			State = 294;
+			State = 304;
 			_errHandler.Sync(this);
 			switch ( Interpreter.AdaptivePredict(_input,21,_ctx) ) {
 			case 1:
@@ -2320,29 +2381,29 @@ public partial class AnimationParser : Parser {
 			case 2:
 				EnterOuterAlt(_localctx, 2);
 				{
-				State = 289; Match(TRUE);
+				State = 299; Match(TRUE);
 				}
 				break;
 
 			case 3:
 				EnterOuterAlt(_localctx, 3);
 				{
-				State = 290; Match(FALSE);
+				State = 300; Match(FALSE);
 				}
 				break;
 
 			case 4:
 				EnterOuterAlt(_localctx, 4);
 				{
-				State = 291; comparing();
+				State = 301; comparing();
 				}
 				break;
 
 			case 5:
 				EnterOuterAlt(_localctx, 5);
 				{
-				State = 292; Match(NOT);
-				State = 293; _localctx.value = altBoolean();
+				State = 302; Match(NOT);
+				State = 303; _localctx.value = altBoolean();
 				}
 				break;
 			}
@@ -2396,17 +2457,17 @@ public partial class AnimationParser : Parser {
 		int _parentState = State;
 		ExprBooleanContext _localctx = new ExprBooleanContext(_ctx, _parentState);
 		ExprBooleanContext _prevctx = _localctx;
-		int _startState = 66;
-		EnterRecursionRule(_localctx, 66, RULE_exprBoolean, _p);
+		int _startState = 68;
+		EnterRecursionRule(_localctx, 68, RULE_exprBoolean, _p);
 		try {
 			int _alt;
 			EnterOuterAlt(_localctx, 1);
 			{
 			{
-			State = 297; termBoolean(0);
+			State = 307; termBoolean(0);
 			}
 			_ctx.stop = _input.Lt(-1);
-			State = 304;
+			State = 314;
 			_errHandler.Sync(this);
 			_alt = Interpreter.AdaptivePredict(_input,22,_ctx);
 			while ( _alt!=2 && _alt!=global::Antlr4.Runtime.Atn.ATN.InvalidAltNumber ) {
@@ -2417,14 +2478,14 @@ public partial class AnimationParser : Parser {
 					{
 					_localctx = new ExprBooleanContext(_parentctx, _parentState);
 					PushNewRecursionContext(_localctx, _startState, RULE_exprBoolean);
-					State = 299;
+					State = 309;
 					if (!(Precpred(_ctx, 1))) throw new FailedPredicateException(this, "Precpred(_ctx, 1)");
-					State = 300; Match(OR);
-					State = 301; termBoolean(0);
+					State = 310; Match(OR);
+					State = 311; termBoolean(0);
 					}
 					} 
 				}
-				State = 306;
+				State = 316;
 				_errHandler.Sync(this);
 				_alt = Interpreter.AdaptivePredict(_input,22,_ctx);
 			}
@@ -2479,17 +2540,17 @@ public partial class AnimationParser : Parser {
 		int _parentState = State;
 		TermBooleanContext _localctx = new TermBooleanContext(_ctx, _parentState);
 		TermBooleanContext _prevctx = _localctx;
-		int _startState = 68;
-		EnterRecursionRule(_localctx, 68, RULE_termBoolean, _p);
+		int _startState = 70;
+		EnterRecursionRule(_localctx, 70, RULE_termBoolean, _p);
 		try {
 			int _alt;
 			EnterOuterAlt(_localctx, 1);
 			{
 			{
-			State = 308; factBoolean();
+			State = 318; factBoolean();
 			}
 			_ctx.stop = _input.Lt(-1);
-			State = 315;
+			State = 325;
 			_errHandler.Sync(this);
 			_alt = Interpreter.AdaptivePredict(_input,23,_ctx);
 			while ( _alt!=2 && _alt!=global::Antlr4.Runtime.Atn.ATN.InvalidAltNumber ) {
@@ -2500,14 +2561,14 @@ public partial class AnimationParser : Parser {
 					{
 					_localctx = new TermBooleanContext(_parentctx, _parentState);
 					PushNewRecursionContext(_localctx, _startState, RULE_termBoolean);
-					State = 310;
+					State = 320;
 					if (!(Precpred(_ctx, 1))) throw new FailedPredicateException(this, "Precpred(_ctx, 1)");
-					State = 311; Match(AND);
-					State = 312; factBoolean();
+					State = 321; Match(AND);
+					State = 322; factBoolean();
 					}
 					} 
 				}
-				State = 317;
+				State = 327;
 				_errHandler.Sync(this);
 				_alt = Interpreter.AdaptivePredict(_input,23,_ctx);
 			}
@@ -2559,31 +2620,31 @@ public partial class AnimationParser : Parser {
 	[RuleVersion(0)]
 	public FactBooleanContext factBoolean() {
 		FactBooleanContext _localctx = new FactBooleanContext(_ctx, State);
-		EnterRule(_localctx, 70, RULE_factBoolean);
+		EnterRule(_localctx, 72, RULE_factBoolean);
 		try {
-			State = 324;
+			State = 334;
 			_errHandler.Sync(this);
 			switch ( Interpreter.AdaptivePredict(_input,24,_ctx) ) {
 			case 1:
 				EnterOuterAlt(_localctx, 1);
 				{
-				State = 318; altBoolean();
+				State = 328; altBoolean();
 				}
 				break;
 
 			case 2:
 				EnterOuterAlt(_localctx, 2);
 				{
-				State = 319; variable();
+				State = 329; variable();
 				}
 				break;
 
 			case 3:
 				EnterOuterAlt(_localctx, 3);
 				{
-				State = 320; Match(LEFT_PAREN);
-				State = 321; exprBoolean(0);
-				State = 322; Match(RIGHT_PAREN);
+				State = 330; Match(LEFT_PAREN);
+				State = 331; exprBoolean(0);
+				State = 332; Match(RIGHT_PAREN);
 				}
 				break;
 			}
@@ -2626,11 +2687,11 @@ public partial class AnimationParser : Parser {
 	[RuleVersion(0)]
 	public BooleanValueContext booleanValue() {
 		BooleanValueContext _localctx = new BooleanValueContext(_ctx, State);
-		EnterRule(_localctx, 72, RULE_booleanValue);
+		EnterRule(_localctx, 74, RULE_booleanValue);
 		try {
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 326; exprBoolean(0);
+			State = 336; exprBoolean(0);
 			}
 		}
 		catch (RecognitionException re) {
@@ -2696,37 +2757,37 @@ public partial class AnimationParser : Parser {
 	[RuleVersion(0)]
 	public ActionContext action() {
 		ActionContext _localctx = new ActionContext(_ctx, State);
-		EnterRule(_localctx, 74, RULE_action);
+		EnterRule(_localctx, 76, RULE_action);
 		int _la;
 		try {
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 328; _localctx.act = actionType();
-			State = 329; _localctx.target = objectValue();
-			State = 332;
+			State = 338; _localctx.act = actionType();
+			State = 339; _localctx.target = objectValue();
+			State = 342;
 			_errHandler.Sync(this);
 			_la = _input.La(1);
 			if (_la==FROM) {
 				{
-				State = 330; Match(FROM);
-				State = 331; _localctx.prev_val = vectorValue();
+				State = 340; Match(FROM);
+				State = 341; _localctx.prev_val = vectorValue();
 				}
 			}
 
-			State = 334; Match(TO);
-			State = 335; _localctx.val = vectorValue();
-			State = 338;
+			State = 344; Match(TO);
+			State = 345; _localctx.val = vectorValue();
+			State = 348;
 			_errHandler.Sync(this);
 			_la = _input.La(1);
 			if (_la==AT) {
 				{
-				State = 336; Match(AT);
-				State = 337; _localctx.delay = numberValue();
+				State = 346; Match(AT);
+				State = 347; _localctx.delay = numberValue();
 				}
 			}
 
-			State = 340; Match(IN);
-			State = 341; _localctx.time = numberValue();
+			State = 350; Match(IN);
+			State = 351; _localctx.time = numberValue();
 			}
 		}
 		catch (RecognitionException re) {
@@ -2779,22 +2840,22 @@ public partial class AnimationParser : Parser {
 	[RuleVersion(0)]
 	public IfContext @if() {
 		IfContext _localctx = new IfContext(_ctx, State);
-		EnterRule(_localctx, 76, RULE_if);
+		EnterRule(_localctx, 78, RULE_if);
 		int _la;
 		try {
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 343; Match(IF);
-			State = 344; Match(LEFT_PAREN);
-			State = 345; _localctx.if_expr = booleanValue();
-			State = 346; Match(RIGHT_PAREN);
-			State = 347; _localctx.body = sequence();
-			State = 349;
+			State = 353; Match(IF);
+			State = 354; Match(LEFT_PAREN);
+			State = 355; _localctx.if_expr = booleanValue();
+			State = 356; Match(RIGHT_PAREN);
+			State = 357; _localctx.body = sequence();
+			State = 359;
 			_errHandler.Sync(this);
 			_la = _input.La(1);
 			if (_la==ELSE) {
 				{
-				State = 348; _localctx.else_expr = @else();
+				State = 358; _localctx.else_expr = @else();
 				}
 			}
 
@@ -2842,24 +2903,24 @@ public partial class AnimationParser : Parser {
 	[RuleVersion(0)]
 	public ElseContext @else() {
 		ElseContext _localctx = new ElseContext(_ctx, State);
-		EnterRule(_localctx, 78, RULE_else);
+		EnterRule(_localctx, 80, RULE_else);
 		try {
-			State = 355;
+			State = 365;
 			_errHandler.Sync(this);
 			switch ( Interpreter.AdaptivePredict(_input,28,_ctx) ) {
 			case 1:
 				EnterOuterAlt(_localctx, 1);
 				{
-				State = 351; Match(ELSE);
-				State = 352; sequence();
+				State = 361; Match(ELSE);
+				State = 362; sequence();
 				}
 				break;
 
 			case 2:
 				EnterOuterAlt(_localctx, 2);
 				{
-				State = 353; Match(ELSE);
-				State = 354; @if();
+				State = 363; Match(ELSE);
+				State = 364; @if();
 				}
 				break;
 			}
@@ -2910,15 +2971,15 @@ public partial class AnimationParser : Parser {
 	[RuleVersion(0)]
 	public WhileContext @while() {
 		WhileContext _localctx = new WhileContext(_ctx, State);
-		EnterRule(_localctx, 80, RULE_while);
+		EnterRule(_localctx, 82, RULE_while);
 		try {
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 357; Match(WHILE);
-			State = 358; Match(LEFT_PAREN);
-			State = 359; _localctx.test_expr = booleanValue();
-			State = 360; Match(RIGHT_PAREN);
-			State = 361; _localctx.body = sequence();
+			State = 367; Match(WHILE);
+			State = 368; Match(LEFT_PAREN);
+			State = 369; _localctx.test_expr = booleanValue();
+			State = 370; Match(RIGHT_PAREN);
+			State = 371; _localctx.body = sequence();
 			}
 		}
 		catch (RecognitionException re) {
@@ -2968,36 +3029,36 @@ public partial class AnimationParser : Parser {
 	[RuleVersion(0)]
 	public ArgValueContext argValue() {
 		ArgValueContext _localctx = new ArgValueContext(_ctx, State);
-		EnterRule(_localctx, 82, RULE_argValue);
+		EnterRule(_localctx, 84, RULE_argValue);
 		try {
-			State = 367;
+			State = 377;
 			_errHandler.Sync(this);
 			switch ( Interpreter.AdaptivePredict(_input,29,_ctx) ) {
 			case 1:
 				EnterOuterAlt(_localctx, 1);
 				{
-				State = 363; objectValue();
+				State = 373; objectValue();
 				}
 				break;
 
 			case 2:
 				EnterOuterAlt(_localctx, 2);
 				{
-				State = 364; vectorValue();
+				State = 374; vectorValue();
 				}
 				break;
 
 			case 3:
 				EnterOuterAlt(_localctx, 3);
 				{
-				State = 365; booleanValue();
+				State = 375; booleanValue();
 				}
 				break;
 
 			case 4:
 				EnterOuterAlt(_localctx, 4);
 				{
-				State = 366; numberValue();
+				State = 376; numberValue();
 				}
 				break;
 			}
@@ -3049,21 +3110,21 @@ public partial class AnimationParser : Parser {
 	[RuleVersion(0)]
 	public ArgumentsContext arguments() {
 		ArgumentsContext _localctx = new ArgumentsContext(_ctx, State);
-		EnterRule(_localctx, 84, RULE_arguments);
+		EnterRule(_localctx, 86, RULE_arguments);
 		int _la;
 		try {
-			State = 379;
+			State = 389;
 			_errHandler.Sync(this);
 			switch ( Interpreter.AdaptivePredict(_input,32,_ctx) ) {
 			case 1:
 				EnterOuterAlt(_localctx, 1);
 				{
-				State = 370;
+				State = 380;
 				_errHandler.Sync(this);
 				switch ( Interpreter.AdaptivePredict(_input,30,_ctx) ) {
 				case 1:
 					{
-					State = 369; _localctx._argValue = argValue();
+					State = 379; _localctx._argValue = argValue();
 					_localctx._args.Add(_localctx._argValue);
 					}
 					break;
@@ -3074,20 +3135,20 @@ public partial class AnimationParser : Parser {
 			case 2:
 				EnterOuterAlt(_localctx, 2);
 				{
-				State = 372; _localctx._argValue = argValue();
+				State = 382; _localctx._argValue = argValue();
 				_localctx._args.Add(_localctx._argValue);
-				State = 375;
+				State = 385;
 				_errHandler.Sync(this);
 				_la = _input.La(1);
 				do {
 					{
 					{
-					State = 373; Match(COLON);
-					State = 374; _localctx._argValue = argValue();
+					State = 383; Match(COLON);
+					State = 384; _localctx._argValue = argValue();
 					_localctx._args.Add(_localctx._argValue);
 					}
 					}
-					State = 377;
+					State = 387;
 					_errHandler.Sync(this);
 					_la = _input.La(1);
 				} while ( _la==COLON );
@@ -3136,14 +3197,14 @@ public partial class AnimationParser : Parser {
 	[RuleVersion(0)]
 	public CallContext call() {
 		CallContext _localctx = new CallContext(_ctx, State);
-		EnterRule(_localctx, 86, RULE_call);
+		EnterRule(_localctx, 88, RULE_call);
 		try {
 			EnterOuterAlt(_localctx, 1);
 			{
-			State = 381; Match(VARIABLE_NAME);
-			State = 382; Match(LEFT_PAREN);
-			State = 383; arguments();
-			State = 384; Match(RIGHT_PAREN);
+			State = 391; Match(VARIABLE_NAME);
+			State = 392; Match(LEFT_PAREN);
+			State = 393; arguments();
+			State = 394; Match(RIGHT_PAREN);
 			}
 		}
 		catch (RecognitionException re) {
@@ -3163,9 +3224,9 @@ public partial class AnimationParser : Parser {
 
 		case 8: return term_sempred((TermContext)_localctx, predIndex);
 
-		case 33: return exprBoolean_sempred((ExprBooleanContext)_localctx, predIndex);
+		case 34: return exprBoolean_sempred((ExprBooleanContext)_localctx, predIndex);
 
-		case 34: return termBoolean_sempred((TermBooleanContext)_localctx, predIndex);
+		case 35: return termBoolean_sempred((TermBooleanContext)_localctx, predIndex);
 		}
 		return true;
 	}
@@ -3199,154 +3260,157 @@ public partial class AnimationParser : Parser {
 	}
 
 	public static readonly string _serializedATN =
-		"\x3\xAF6F\x8320\x479D\xB75C\x4880\x1605\x191C\xAB37\x3\x37\x185\x4\x2"+
+		"\x3\xAF6F\x8320\x479D\xB75C\x4880\x1605\x191C\xAB37\x3\x39\x18F\x4\x2"+
 		"\t\x2\x4\x3\t\x3\x4\x4\t\x4\x4\x5\t\x5\x4\x6\t\x6\x4\a\t\a\x4\b\t\b\x4"+
 		"\t\t\t\x4\n\t\n\x4\v\t\v\x4\f\t\f\x4\r\t\r\x4\xE\t\xE\x4\xF\t\xF\x4\x10"+
 		"\t\x10\x4\x11\t\x11\x4\x12\t\x12\x4\x13\t\x13\x4\x14\t\x14\x4\x15\t\x15"+
 		"\x4\x16\t\x16\x4\x17\t\x17\x4\x18\t\x18\x4\x19\t\x19\x4\x1A\t\x1A\x4\x1B"+
 		"\t\x1B\x4\x1C\t\x1C\x4\x1D\t\x1D\x4\x1E\t\x1E\x4\x1F\t\x1F\x4 \t \x4!"+
 		"\t!\x4\"\t\"\x4#\t#\x4$\t$\x4%\t%\x4&\t&\x4\'\t\'\x4(\t(\x4)\t)\x4*\t"+
-		"*\x4+\t+\x4,\t,\x4-\t-\x3\x2\x3\x2\x3\x3\x3\x3\x3\x3\x3\x3\x3\x3\x3\x3"+
-		"\x3\x3\x3\x3\x3\x4\x3\x4\x5\x4g\n\x4\x3\x4\x3\x4\x3\x4\x3\x4\x3\x4\x6"+
-		"\x4n\n\x4\r\x4\xE\x4o\x3\x4\x3\x4\x5\x4t\n\x4\x3\x5\x3\x5\x3\x6\x3\x6"+
-		"\x3\x6\x5\x6{\n\x6\x3\a\x3\a\x5\a\x7F\n\a\x3\b\x3\b\x3\t\x3\t\x3\t\x3"+
-		"\t\x3\t\x3\t\x3\t\x3\t\x3\t\a\t\x8C\n\t\f\t\xE\t\x8F\v\t\x3\n\x3\n\x3"+
-		"\n\x3\n\x3\n\x3\n\x3\n\x3\n\x3\n\a\n\x9A\n\n\f\n\xE\n\x9D\v\n\x3\v\x3"+
-		"\v\x3\v\x3\v\x3\v\x3\v\x3\v\x3\v\x5\v\xA7\n\v\x3\f\x3\f\x3\r\x6\r\xAC"+
-		"\n\r\r\r\xE\r\xAD\x3\r\x3\r\x3\xE\x3\xE\x5\xE\xB4\n\xE\x3\xF\x3\xF\x3"+
-		"\xF\x3\xF\x5\xF\xBA\n\xF\x3\x10\x3\x10\x5\x10\xBE\n\x10\x3\x11\x3\x11"+
-		"\a\x11\xC2\n\x11\f\x11\xE\x11\xC5\v\x11\x3\x11\x3\x11\x3\x12\x3\x12\a"+
-		"\x12\xCB\n\x12\f\x12\xE\x12\xCE\v\x12\x3\x12\x3\x12\x3\x13\x3\x13\x3\x13"+
-		"\x3\x13\x3\x13\x3\x13\x3\x13\x5\x13\xD9\n\x13\x3\x14\x3\x14\x3\x15\x3"+
-		"\x15\x3\x15\x3\x16\x3\x16\x3\x16\x3\x16\x3\x16\x3\x16\a\x16\xE6\n\x16"+
-		"\f\x16\xE\x16\xE9\v\x16\x5\x16\xEB\n\x16\x3\x16\x3\x16\x3\x16\x3\x17\x3"+
-		"\x17\x3\x17\x3\x17\x3\x17\x3\x18\x3\x18\x3\x18\x3\x18\x3\x18\x3\x19\x3"+
-		"\x19\x3\x19\x3\x19\x3\x19\x3\x1A\x3\x1A\x3\x1A\x3\x1A\x3\x1A\x3\x1B\x3"+
-		"\x1B\x3\x1B\x3\x1B\x3\x1B\x3\x1C\x3\x1C\x3\x1C\x3\x1C\x3\x1C\x5\x1C\x10E"+
-		"\n\x1C\x3\x1D\x3\x1D\x3\x1D\x3\x1D\x3\x1E\x3\x1E\x3\x1E\x3\x1E\x3\x1E"+
-		"\x5\x1E\x119\n\x1E\x3\x1F\x3\x1F\x3 \x3 \x3!\x3!\x3!\x3!\x3\"\x3\"\x3"+
-		"\"\x3\"\x3\"\x3\"\x5\"\x129\n\"\x3#\x3#\x3#\x3#\x3#\x3#\a#\x131\n#\f#"+
-		"\xE#\x134\v#\x3$\x3$\x3$\x3$\x3$\x3$\a$\x13C\n$\f$\xE$\x13F\v$\x3%\x3"+
-		"%\x3%\x3%\x3%\x3%\x5%\x147\n%\x3&\x3&\x3\'\x3\'\x3\'\x3\'\x5\'\x14F\n"+
-		"\'\x3\'\x3\'\x3\'\x3\'\x5\'\x155\n\'\x3\'\x3\'\x3\'\x3(\x3(\x3(\x3(\x3"+
-		"(\x3(\x5(\x160\n(\x3)\x3)\x3)\x3)\x5)\x166\n)\x3*\x3*\x3*\x3*\x3*\x3*"+
-		"\x3+\x3+\x3+\x3+\x5+\x172\n+\x3,\x5,\x175\n,\x3,\x3,\x3,\x6,\x17A\n,\r"+
-		",\xE,\x17B\x5,\x17E\n,\x3-\x3-\x3-\x3-\x3-\x3-\x2\x2\x6\x10\x12\x44\x46"+
-		".\x2\x2\x4\x2\x6\x2\b\x2\n\x2\f\x2\xE\x2\x10\x2\x12\x2\x14\x2\x16\x2\x18"+
-		"\x2\x1A\x2\x1C\x2\x1E\x2 \x2\"\x2$\x2&\x2(\x2*\x2,\x2.\x2\x30\x2\x32\x2"+
-		"\x34\x2\x36\x2\x38\x2:\x2<\x2>\x2@\x2\x42\x2\x44\x2\x46\x2H\x2J\x2L\x2"+
-		"N\x2P\x2R\x2T\x2V\x2X\x2\x2\x6\x4\x2\x10\x13\x36\x36\x3\x2\x15\x17\x4"+
-		"\x2\v\v\r\xF\x4\x2%&,/\x18B\x2Z\x3\x2\x2\x2\x4\\\x3\x2\x2\x2\x6s\x3\x2"+
-		"\x2\x2\bu\x3\x2\x2\x2\nz\x3\x2\x2\x2\f~\x3\x2\x2\x2\xE\x80\x3\x2\x2\x2"+
-		"\x10\x82\x3\x2\x2\x2\x12\x90\x3\x2\x2\x2\x14\xA6\x3\x2\x2\x2\x16\xA8\x3"+
-		"\x2\x2\x2\x18\xAB\x3\x2\x2\x2\x1A\xB3\x3\x2\x2\x2\x1C\xB9\x3\x2\x2\x2"+
-		"\x1E\xBD\x3\x2\x2\x2 \xBF\x3\x2\x2\x2\"\xC8\x3\x2\x2\x2$\xD8\x3\x2\x2"+
-		"\x2&\xDA\x3\x2\x2\x2(\xDC\x3\x2\x2\x2*\xDF\x3\x2\x2\x2,\xEF\x3\x2\x2\x2"+
-		".\xF4\x3\x2\x2\x2\x30\xF9\x3\x2\x2\x2\x32\xFE\x3\x2\x2\x2\x34\x103\x3"+
-		"\x2\x2\x2\x36\x10D\x3\x2\x2\x2\x38\x10F\x3\x2\x2\x2:\x118\x3\x2\x2\x2"+
-		"<\x11A\x3\x2\x2\x2>\x11C\x3\x2\x2\x2@\x11E\x3\x2\x2\x2\x42\x128\x3\x2"+
-		"\x2\x2\x44\x12A\x3\x2\x2\x2\x46\x135\x3\x2\x2\x2H\x146\x3\x2\x2\x2J\x148"+
-		"\x3\x2\x2\x2L\x14A\x3\x2\x2\x2N\x159\x3\x2\x2\x2P\x165\x3\x2\x2\x2R\x167"+
-		"\x3\x2\x2\x2T\x171\x3\x2\x2\x2V\x17D\x3\x2\x2\x2X\x17F\x3\x2\x2\x2Z[\t"+
-		"\x2\x2\x2[\x3\x3\x2\x2\x2\\]\a\x1D\x2\x2]^\x5\xE\b\x2^_\a\"\x2\x2_`\x5"+
-		"\xE\b\x2`\x61\a\"\x2\x2\x61\x62\x5\xE\b\x2\x62\x63\a\x1E\x2\x2\x63\x5"+
-		"\x3\x2\x2\x2\x64\x66\a\x1D\x2\x2\x65g\x5\n\x6\x2\x66\x65\x3\x2\x2\x2\x66"+
-		"g\x3\x2\x2\x2gh\x3\x2\x2\x2ht\a\x1E\x2\x2ij\a\x1D\x2\x2jm\x5\n\x6\x2k"+
-		"l\a\"\x2\x2ln\x5\n\x6\x2mk\x3\x2\x2\x2no\x3\x2\x2\x2om\x3\x2\x2\x2op\x3"+
-		"\x2\x2\x2pq\x3\x2\x2\x2qr\a\x1E\x2\x2rt\x3\x2\x2\x2s\x64\x3\x2\x2\x2s"+
-		"i\x3\x2\x2\x2t\a\x3\x2\x2\x2uv\t\x3\x2\x2v\t\x3\x2\x2\x2w{\x5\x16\f\x2"+
-		"x{\x5\x2\x2\x2y{\x5\x6\x4\x2zw\x3\x2\x2\x2zx\x3\x2\x2\x2zy\x3\x2\x2\x2"+
-		"{\v\x3\x2\x2\x2|\x7F\x5\x16\f\x2}\x7F\x5\x4\x3\x2~|\x3\x2\x2\x2~}\x3\x2"+
-		"\x2\x2\x7F\r\x3\x2\x2\x2\x80\x81\x5\x10\t\x2\x81\xF\x3\x2\x2\x2\x82\x83"+
-		"\b\t\x1\x2\x83\x84\x5\x12\n\x2\x84\x8D\x3\x2\x2\x2\x85\x86\f\x4\x2\x2"+
-		"\x86\x87\a\'\x2\x2\x87\x8C\x5\x12\n\x2\x88\x89\f\x3\x2\x2\x89\x8A\a(\x2"+
-		"\x2\x8A\x8C\x5\x12\n\x2\x8B\x85\x3\x2\x2\x2\x8B\x88\x3\x2\x2\x2\x8C\x8F"+
-		"\x3\x2\x2\x2\x8D\x8B\x3\x2\x2\x2\x8D\x8E\x3\x2\x2\x2\x8E\x11\x3\x2\x2"+
-		"\x2\x8F\x8D\x3\x2\x2\x2\x90\x91\b\n\x1\x2\x91\x92\x5\x14\v\x2\x92\x9B"+
-		"\x3\x2\x2\x2\x93\x94\f\x4\x2\x2\x94\x95\a)\x2\x2\x95\x9A\x5\x14\v\x2\x96"+
-		"\x97\f\x3\x2\x2\x97\x98\a*\x2\x2\x98\x9A\x5\x14\v\x2\x99\x93\x3\x2\x2"+
-		"\x2\x99\x96\x3\x2\x2\x2\x9A\x9D\x3\x2\x2\x2\x9B\x99\x3\x2\x2\x2\x9B\x9C"+
-		"\x3\x2\x2\x2\x9C\x13\x3\x2\x2\x2\x9D\x9B\x3\x2\x2\x2\x9E\xA7\a\x33\x2"+
-		"\x2\x9F\xA0\a(\x2\x2\xA0\xA7\a\x33\x2\x2\xA1\xA7\x5\x16\f\x2\xA2\xA3\a"+
-		"\x1F\x2\x2\xA3\xA4\x5\x10\t\x2\xA4\xA5\a \x2\x2\xA5\xA7\x3\x2\x2\x2\xA6"+
-		"\x9E\x3\x2\x2\x2\xA6\x9F\x3\x2\x2\x2\xA6\xA1\x3\x2\x2\x2\xA6\xA2\x3\x2"+
-		"\x2\x2\xA7\x15\x3\x2\x2\x2\xA8\xA9\a\x34\x2\x2\xA9\x17\x3\x2\x2\x2\xAA"+
-		"\xAC\x5\x1A\xE\x2\xAB\xAA\x3\x2\x2\x2\xAC\xAD\x3\x2\x2\x2\xAD\xAB\x3\x2"+
-		"\x2\x2\xAD\xAE\x3\x2\x2\x2\xAE\xAF\x3\x2\x2\x2\xAF\xB0\a\x2\x2\x3\xB0"+
-		"\x19\x3\x2\x2\x2\xB1\xB4\x5*\x16\x2\xB2\xB4\x5\x1C\xF\x2\xB3\xB1\x3\x2"+
-		"\x2\x2\xB3\xB2\x3\x2\x2\x2\xB4\x1B\x3\x2\x2\x2\xB5\xBA\x5\x1E\x10\x2\xB6"+
-		"\xBA\x5$\x13\x2\xB7\xBA\x5N(\x2\xB8\xBA\x5R*\x2\xB9\xB5\x3\x2\x2\x2\xB9"+
-		"\xB6\x3\x2\x2\x2\xB9\xB7\x3\x2\x2\x2\xB9\xB8\x3\x2\x2\x2\xBA\x1D\x3\x2"+
-		"\x2\x2\xBB\xBE\x5 \x11\x2\xBC\xBE\x5\"\x12\x2\xBD\xBB\x3\x2\x2\x2\xBD"+
-		"\xBC\x3\x2\x2\x2\xBE\x1F\x3\x2\x2\x2\xBF\xC3\a#\x2\x2\xC0\xC2\x5\x1C\xF"+
-		"\x2\xC1\xC0\x3\x2\x2\x2\xC2\xC5\x3\x2\x2\x2\xC3\xC1\x3\x2\x2\x2\xC3\xC4"+
-		"\x3\x2\x2\x2\xC4\xC6\x3\x2\x2\x2\xC5\xC3\x3\x2\x2\x2\xC6\xC7\a$\x2\x2"+
-		"\xC7!\x3\x2\x2\x2\xC8\xCC\a\x1B\x2\x2\xC9\xCB\x5\x1C\xF\x2\xCA\xC9\x3"+
-		"\x2\x2\x2\xCB\xCE\x3\x2\x2\x2\xCC\xCA\x3\x2\x2\x2\xCC\xCD\x3\x2\x2\x2"+
-		"\xCD\xCF\x3\x2\x2\x2\xCE\xCC\x3\x2\x2\x2\xCF\xD0\a\x1C\x2\x2\xD0#\x3\x2"+
-		"\x2\x2\xD1\xD2\x5<\x1F\x2\xD2\xD3\a!\x2\x2\xD3\xD9\x3\x2\x2\x2\xD4\xD5"+
-		"\x5L\'\x2\xD5\xD6\a!\x2\x2\xD6\xD9\x3\x2\x2\x2\xD7\xD9\x5X-\x2\xD8\xD1"+
-		"\x3\x2\x2\x2\xD8\xD4\x3\x2\x2\x2\xD8\xD7\x3\x2\x2\x2\xD9%\x3\x2\x2\x2"+
-		"\xDA\xDB\t\x4\x2\x2\xDB\'\x3\x2\x2\x2\xDC\xDD\x5&\x14\x2\xDD\xDE\a\x34"+
-		"\x2\x2\xDE)\x3\x2\x2\x2\xDF\xE0\a\x3\x2\x2\xE0\xE1\a\x34\x2\x2\xE1\xEA"+
-		"\a\x1F\x2\x2\xE2\xE7\x5(\x15\x2\xE3\xE4\a\"\x2\x2\xE4\xE6\x5(\x15\x2\xE5"+
-		"\xE3\x3\x2\x2\x2\xE6\xE9\x3\x2\x2\x2\xE7\xE5\x3\x2\x2\x2\xE7\xE8\x3\x2"+
-		"\x2\x2\xE8\xEB\x3\x2\x2\x2\xE9\xE7\x3\x2\x2\x2\xEA\xE2\x3\x2\x2\x2\xEA"+
-		"\xEB\x3\x2\x2\x2\xEB\xEC\x3\x2\x2\x2\xEC\xED\a \x2\x2\xED\xEE\x5\"\x12"+
-		"\x2\xEE+\x3\x2\x2\x2\xEF\xF0\a\xE\x2\x2\xF0\xF1\a\x34\x2\x2\xF1\xF2\a"+
-		"+\x2\x2\xF2\xF3\x5\x2\x2\x2\xF3-\x3\x2\x2\x2\xF4\xF5\a\xE\x2\x2\xF5\xF6"+
-		"\a\x34\x2\x2\xF6\xF7\a+\x2\x2\xF7\xF8\x5\x6\x4\x2\xF8/\x3\x2\x2\x2\xF9"+
-		"\xFA\a\v\x2\x2\xFA\xFB\a\x34\x2\x2\xFB\xFC\a+\x2\x2\xFC\xFD\x5\xE\b\x2"+
-		"\xFD\x31\x3\x2\x2\x2\xFE\xFF\a\r\x2\x2\xFF\x100\a\x34\x2\x2\x100\x101"+
-		"\a+\x2\x2\x101\x102\x5\x4\x3\x2\x102\x33\x3\x2\x2\x2\x103\x104\a\xF\x2"+
-		"\x2\x104\x105\a\x34\x2\x2\x105\x106\a+\x2\x2\x106\x107\x5J&\x2\x107\x35"+
-		"\x3\x2\x2\x2\x108\x10E\x5\x2\x2\x2\x109\x10E\x5\x6\x4\x2\x10A\x10E\x5"+
-		"\xE\b\x2\x10B\x10E\x5\x4\x3\x2\x10C\x10E\x5J&\x2\x10D\x108\x3\x2\x2\x2"+
-		"\x10D\x109\x3\x2\x2\x2\x10D\x10A\x3\x2\x2\x2\x10D\x10B\x3\x2\x2\x2\x10D"+
-		"\x10C\x3\x2\x2\x2\x10E\x37\x3\x2\x2\x2\x10F\x110\a\x34\x2\x2\x110\x111"+
-		"\a+\x2\x2\x111\x112\x5\x36\x1C\x2\x112\x39\x3\x2\x2\x2\x113\x119\x5,\x17"+
-		"\x2\x114\x119\x5.\x18\x2\x115\x119\x5\x30\x19\x2\x116\x119\x5\x32\x1A"+
-		"\x2\x117\x119\x5\x38\x1D\x2\x118\x113\x3\x2\x2\x2\x118\x114\x3\x2\x2\x2"+
-		"\x118\x115\x3\x2\x2\x2\x118\x116\x3\x2\x2\x2\x118\x117\x3\x2\x2\x2\x119"+
-		";\x3\x2\x2\x2\x11A\x11B\x5:\x1E\x2\x11B=\x3\x2\x2\x2\x11C\x11D\t\x5\x2"+
-		"\x2\x11D?\x3\x2\x2\x2\x11E\x11F\x5\xE\b\x2\x11F\x120\x5> \x2\x120\x121"+
-		"\x5\xE\b\x2\x121\x41\x3\x2\x2\x2\x122\x129\x3\x2\x2\x2\x123\x129\a\x19"+
-		"\x2\x2\x124\x129\a\x1A\x2\x2\x125\x129\x5@!\x2\x126\x127\a\x32\x2\x2\x127"+
-		"\x129\x5\x42\"\x2\x128\x122\x3\x2\x2\x2\x128\x123\x3\x2\x2\x2\x128\x124"+
-		"\x3\x2\x2\x2\x128\x125\x3\x2\x2\x2\x128\x126\x3\x2\x2\x2\x129\x43\x3\x2"+
-		"\x2\x2\x12A\x12B\b#\x1\x2\x12B\x12C\x5\x46$\x2\x12C\x132\x3\x2\x2\x2\x12D"+
-		"\x12E\f\x3\x2\x2\x12E\x12F\a\x31\x2\x2\x12F\x131\x5\x46$\x2\x130\x12D"+
-		"\x3\x2\x2\x2\x131\x134\x3\x2\x2\x2\x132\x130\x3\x2\x2\x2\x132\x133\x3"+
-		"\x2\x2\x2\x133\x45\x3\x2\x2\x2\x134\x132\x3\x2\x2\x2\x135\x136\b$\x1\x2"+
-		"\x136\x137\x5H%\x2\x137\x13D\x3\x2\x2\x2\x138\x139\f\x3\x2\x2\x139\x13A"+
-		"\a\x30\x2\x2\x13A\x13C\x5H%\x2\x13B\x138\x3\x2\x2\x2\x13C\x13F\x3\x2\x2"+
-		"\x2\x13D\x13B\x3\x2\x2\x2\x13D\x13E\x3\x2\x2\x2\x13EG\x3\x2\x2\x2\x13F"+
-		"\x13D\x3\x2\x2\x2\x140\x147\x5\x42\"\x2\x141\x147\x5\x16\f\x2\x142\x143"+
-		"\a\x1F\x2\x2\x143\x144\x5\x44#\x2\x144\x145\a \x2\x2\x145\x147\x3\x2\x2"+
-		"\x2\x146\x140\x3\x2\x2\x2\x146\x141\x3\x2\x2\x2\x146\x142\x3\x2\x2\x2"+
-		"\x147I\x3\x2\x2\x2\x148\x149\x5\x44#\x2\x149K\x3\x2\x2\x2\x14A\x14B\x5"+
-		"\b\x5\x2\x14B\x14E\x5\n\x6\x2\x14C\x14D\a\a\x2\x2\x14D\x14F\x5\f\a\x2"+
-		"\x14E\x14C\x3\x2\x2\x2\x14E\x14F\x3\x2\x2\x2\x14F\x150\x3\x2\x2\x2\x150"+
-		"\x151\a\n\x2\x2\x151\x154\x5\f\a\x2\x152\x153\a\b\x2\x2\x153\x155\x5\xE"+
-		"\b\x2\x154\x152\x3\x2\x2\x2\x154\x155\x3\x2\x2\x2\x155\x156\x3\x2\x2\x2"+
-		"\x156\x157\a\t\x2\x2\x157\x158\x5\xE\b\x2\x158M\x3\x2\x2\x2\x159\x15A"+
-		"\a\x4\x2\x2\x15A\x15B\a\x1F\x2\x2\x15B\x15C\x5J&\x2\x15C\x15D\a \x2\x2"+
-		"\x15D\x15F\x5\"\x12\x2\x15E\x160\x5P)\x2\x15F\x15E\x3\x2\x2\x2\x15F\x160"+
-		"\x3\x2\x2\x2\x160O\x3\x2\x2\x2\x161\x162\a\x5\x2\x2\x162\x166\x5\"\x12"+
-		"\x2\x163\x164\a\x5\x2\x2\x164\x166\x5N(\x2\x165\x161\x3\x2\x2\x2\x165"+
-		"\x163\x3\x2\x2\x2\x166Q\x3\x2\x2\x2\x167\x168\a\x6\x2\x2\x168\x169\a\x1F"+
-		"\x2\x2\x169\x16A\x5J&\x2\x16A\x16B\a \x2\x2\x16B\x16C\x5\"\x12\x2\x16C"+
-		"S\x3\x2\x2\x2\x16D\x172\x5\n\x6\x2\x16E\x172\x5\f\a\x2\x16F\x172\x5J&"+
-		"\x2\x170\x172\x5\xE\b\x2\x171\x16D\x3\x2\x2\x2\x171\x16E\x3\x2\x2\x2\x171"+
-		"\x16F\x3\x2\x2\x2\x171\x170\x3\x2\x2\x2\x172U\x3\x2\x2\x2\x173\x175\x5"+
-		"T+\x2\x174\x173\x3\x2\x2\x2\x174\x175\x3\x2\x2\x2\x175\x17E\x3\x2\x2\x2"+
-		"\x176\x179\x5T+\x2\x177\x178\a\"\x2\x2\x178\x17A\x5T+\x2\x179\x177\x3"+
-		"\x2\x2\x2\x17A\x17B\x3\x2\x2\x2\x17B\x179\x3\x2\x2\x2\x17B\x17C\x3\x2"+
-		"\x2\x2\x17C\x17E\x3\x2\x2\x2\x17D\x174\x3\x2\x2\x2\x17D\x176\x3\x2\x2"+
-		"\x2\x17EW\x3\x2\x2\x2\x17F\x180\a\x34\x2\x2\x180\x181\a\x1F\x2\x2\x181"+
-		"\x182\x5V,\x2\x182\x183\a \x2\x2\x183Y\x3\x2\x2\x2#\x66osz~\x8B\x8D\x99"+
-		"\x9B\xA6\xAD\xB3\xB9\xBD\xC3\xCC\xD8\xE7\xEA\x10D\x118\x128\x132\x13D"+
-		"\x146\x14E\x154\x15F\x165\x171\x174\x17B\x17D";
+		"*\x4+\t+\x4,\t,\x4-\t-\x4.\t.\x3\x2\x3\x2\x3\x3\x3\x3\x3\x3\x3\x3\x3\x3"+
+		"\x3\x3\x3\x3\x3\x3\x3\x4\x3\x4\x5\x4i\n\x4\x3\x4\x3\x4\x3\x4\x3\x4\x3"+
+		"\x4\x6\x4p\n\x4\r\x4\xE\x4q\x3\x4\x3\x4\x5\x4v\n\x4\x3\x5\x3\x5\x3\x6"+
+		"\x3\x6\x3\x6\x5\x6}\n\x6\x3\a\x3\a\x5\a\x81\n\a\x3\b\x3\b\x3\t\x3\t\x3"+
+		"\t\x3\t\x3\t\x3\t\x3\t\x3\t\x3\t\a\t\x8E\n\t\f\t\xE\t\x91\v\t\x3\n\x3"+
+		"\n\x3\n\x3\n\x3\n\x3\n\x3\n\x3\n\x3\n\a\n\x9C\n\n\f\n\xE\n\x9F\v\n\x3"+
+		"\v\x3\v\x3\v\x3\v\x3\v\x3\v\x3\v\x3\v\x5\v\xA9\n\v\x3\f\x3\f\x3\r\x6\r"+
+		"\xAE\n\r\r\r\xE\r\xAF\x3\r\x3\r\x3\xE\x3\xE\x5\xE\xB6\n\xE\x3\xF\x3\xF"+
+		"\x3\xF\x3\xF\x5\xF\xBC\n\xF\x3\x10\x3\x10\x5\x10\xC0\n\x10\x3\x11\x3\x11"+
+		"\a\x11\xC4\n\x11\f\x11\xE\x11\xC7\v\x11\x3\x11\x3\x11\x3\x12\x3\x12\a"+
+		"\x12\xCD\n\x12\f\x12\xE\x12\xD0\v\x12\x3\x12\x3\x12\x3\x13\x3\x13\x3\x13"+
+		"\x3\x13\x3\x13\x3\x13\x3\x13\x3\x13\x3\x13\x3\x13\x3\x13\x3\x13\x5\x13"+
+		"\xE0\n\x13\x3\x14\x3\x14\x3\x15\x3\x15\x3\x15\x3\x16\x3\x16\x3\x16\x3"+
+		"\x17\x3\x17\x3\x17\x3\x17\x3\x17\x3\x17\a\x17\xF0\n\x17\f\x17\xE\x17\xF3"+
+		"\v\x17\x5\x17\xF5\n\x17\x3\x17\x3\x17\x3\x17\x3\x18\x3\x18\x3\x18\x3\x18"+
+		"\x3\x18\x3\x19\x3\x19\x3\x19\x3\x19\x3\x19\x3\x1A\x3\x1A\x3\x1A\x3\x1A"+
+		"\x3\x1A\x3\x1B\x3\x1B\x3\x1B\x3\x1B\x3\x1B\x3\x1C\x3\x1C\x3\x1C\x3\x1C"+
+		"\x3\x1C\x3\x1D\x3\x1D\x3\x1D\x3\x1D\x3\x1D\x5\x1D\x118\n\x1D\x3\x1E\x3"+
+		"\x1E\x3\x1E\x3\x1E\x3\x1F\x3\x1F\x3\x1F\x3\x1F\x3\x1F\x5\x1F\x123\n\x1F"+
+		"\x3 \x3 \x3!\x3!\x3\"\x3\"\x3\"\x3\"\x3#\x3#\x3#\x3#\x3#\x3#\x5#\x133"+
+		"\n#\x3$\x3$\x3$\x3$\x3$\x3$\a$\x13B\n$\f$\xE$\x13E\v$\x3%\x3%\x3%\x3%"+
+		"\x3%\x3%\a%\x146\n%\f%\xE%\x149\v%\x3&\x3&\x3&\x3&\x3&\x3&\x5&\x151\n"+
+		"&\x3\'\x3\'\x3(\x3(\x3(\x3(\x5(\x159\n(\x3(\x3(\x3(\x3(\x5(\x15F\n(\x3"+
+		"(\x3(\x3(\x3)\x3)\x3)\x3)\x3)\x3)\x5)\x16A\n)\x3*\x3*\x3*\x3*\x5*\x170"+
+		"\n*\x3+\x3+\x3+\x3+\x3+\x3+\x3,\x3,\x3,\x3,\x5,\x17C\n,\x3-\x5-\x17F\n"+
+		"-\x3-\x3-\x3-\x6-\x184\n-\r-\xE-\x185\x5-\x188\n-\x3.\x3.\x3.\x3.\x3."+
+		"\x3.\x2\x2\x6\x10\x12\x46H/\x2\x2\x4\x2\x6\x2\b\x2\n\x2\f\x2\xE\x2\x10"+
+		"\x2\x12\x2\x14\x2\x16\x2\x18\x2\x1A\x2\x1C\x2\x1E\x2 \x2\"\x2$\x2&\x2"+
+		"(\x2*\x2,\x2.\x2\x30\x2\x32\x2\x34\x2\x36\x2\x38\x2:\x2<\x2>\x2@\x2\x42"+
+		"\x2\x44\x2\x46\x2H\x2J\x2L\x2N\x2P\x2R\x2T\x2V\x2X\x2Z\x2\x2\x6\x4\x2"+
+		"\x11\x14\x37\x37\x3\x2\x16\x18\x4\x2\f\f\xE\x10\x4\x2&\'-\x30\x195\x2"+
+		"\\\x3\x2\x2\x2\x4^\x3\x2\x2\x2\x6u\x3\x2\x2\x2\bw\x3\x2\x2\x2\n|\x3\x2"+
+		"\x2\x2\f\x80\x3\x2\x2\x2\xE\x82\x3\x2\x2\x2\x10\x84\x3\x2\x2\x2\x12\x92"+
+		"\x3\x2\x2\x2\x14\xA8\x3\x2\x2\x2\x16\xAA\x3\x2\x2\x2\x18\xAD\x3\x2\x2"+
+		"\x2\x1A\xB5\x3\x2\x2\x2\x1C\xBB\x3\x2\x2\x2\x1E\xBF\x3\x2\x2\x2 \xC1\x3"+
+		"\x2\x2\x2\"\xCA\x3\x2\x2\x2$\xDF\x3\x2\x2\x2&\xE1\x3\x2\x2\x2(\xE3\x3"+
+		"\x2\x2\x2*\xE6\x3\x2\x2\x2,\xE9\x3\x2\x2\x2.\xF9\x3\x2\x2\x2\x30\xFE\x3"+
+		"\x2\x2\x2\x32\x103\x3\x2\x2\x2\x34\x108\x3\x2\x2\x2\x36\x10D\x3\x2\x2"+
+		"\x2\x38\x117\x3\x2\x2\x2:\x119\x3\x2\x2\x2<\x122\x3\x2\x2\x2>\x124\x3"+
+		"\x2\x2\x2@\x126\x3\x2\x2\x2\x42\x128\x3\x2\x2\x2\x44\x132\x3\x2\x2\x2"+
+		"\x46\x134\x3\x2\x2\x2H\x13F\x3\x2\x2\x2J\x150\x3\x2\x2\x2L\x152\x3\x2"+
+		"\x2\x2N\x154\x3\x2\x2\x2P\x163\x3\x2\x2\x2R\x16F\x3\x2\x2\x2T\x171\x3"+
+		"\x2\x2\x2V\x17B\x3\x2\x2\x2X\x187\x3\x2\x2\x2Z\x189\x3\x2\x2\x2\\]\t\x2"+
+		"\x2\x2]\x3\x3\x2\x2\x2^_\a\x1E\x2\x2_`\x5\xE\b\x2`\x61\a#\x2\x2\x61\x62"+
+		"\x5\xE\b\x2\x62\x63\a#\x2\x2\x63\x64\x5\xE\b\x2\x64\x65\a\x1F\x2\x2\x65"+
+		"\x5\x3\x2\x2\x2\x66h\a\x1E\x2\x2gi\x5\n\x6\x2hg\x3\x2\x2\x2hi\x3\x2\x2"+
+		"\x2ij\x3\x2\x2\x2jv\a\x1F\x2\x2kl\a\x1E\x2\x2lo\x5\n\x6\x2mn\a#\x2\x2"+
+		"np\x5\n\x6\x2om\x3\x2\x2\x2pq\x3\x2\x2\x2qo\x3\x2\x2\x2qr\x3\x2\x2\x2"+
+		"rs\x3\x2\x2\x2st\a\x1F\x2\x2tv\x3\x2\x2\x2u\x66\x3\x2\x2\x2uk\x3\x2\x2"+
+		"\x2v\a\x3\x2\x2\x2wx\t\x3\x2\x2x\t\x3\x2\x2\x2y}\x5\x16\f\x2z}\x5\x2\x2"+
+		"\x2{}\x5\x6\x4\x2|y\x3\x2\x2\x2|z\x3\x2\x2\x2|{\x3\x2\x2\x2}\v\x3\x2\x2"+
+		"\x2~\x81\x5\x16\f\x2\x7F\x81\x5\x4\x3\x2\x80~\x3\x2\x2\x2\x80\x7F\x3\x2"+
+		"\x2\x2\x81\r\x3\x2\x2\x2\x82\x83\x5\x10\t\x2\x83\xF\x3\x2\x2\x2\x84\x85"+
+		"\b\t\x1\x2\x85\x86\x5\x12\n\x2\x86\x8F\x3\x2\x2\x2\x87\x88\f\x4\x2\x2"+
+		"\x88\x89\a(\x2\x2\x89\x8E\x5\x12\n\x2\x8A\x8B\f\x3\x2\x2\x8B\x8C\a)\x2"+
+		"\x2\x8C\x8E\x5\x12\n\x2\x8D\x87\x3\x2\x2\x2\x8D\x8A\x3\x2\x2\x2\x8E\x91"+
+		"\x3\x2\x2\x2\x8F\x8D\x3\x2\x2\x2\x8F\x90\x3\x2\x2\x2\x90\x11\x3\x2\x2"+
+		"\x2\x91\x8F\x3\x2\x2\x2\x92\x93\b\n\x1\x2\x93\x94\x5\x14\v\x2\x94\x9D"+
+		"\x3\x2\x2\x2\x95\x96\f\x4\x2\x2\x96\x97\a*\x2\x2\x97\x9C\x5\x14\v\x2\x98"+
+		"\x99\f\x3\x2\x2\x99\x9A\a+\x2\x2\x9A\x9C\x5\x14\v\x2\x9B\x95\x3\x2\x2"+
+		"\x2\x9B\x98\x3\x2\x2\x2\x9C\x9F\x3\x2\x2\x2\x9D\x9B\x3\x2\x2\x2\x9D\x9E"+
+		"\x3\x2\x2\x2\x9E\x13\x3\x2\x2\x2\x9F\x9D\x3\x2\x2\x2\xA0\xA9\a\x34\x2"+
+		"\x2\xA1\xA2\a)\x2\x2\xA2\xA9\a\x34\x2\x2\xA3\xA9\x5\x16\f\x2\xA4\xA5\a"+
+		" \x2\x2\xA5\xA6\x5\x10\t\x2\xA6\xA7\a!\x2\x2\xA7\xA9\x3\x2\x2\x2\xA8\xA0"+
+		"\x3\x2\x2\x2\xA8\xA1\x3\x2\x2\x2\xA8\xA3\x3\x2\x2\x2\xA8\xA4\x3\x2\x2"+
+		"\x2\xA9\x15\x3\x2\x2\x2\xAA\xAB\a\x35\x2\x2\xAB\x17\x3\x2\x2\x2\xAC\xAE"+
+		"\x5\x1A\xE\x2\xAD\xAC\x3\x2\x2\x2\xAE\xAF\x3\x2\x2\x2\xAF\xAD\x3\x2\x2"+
+		"\x2\xAF\xB0\x3\x2\x2\x2\xB0\xB1\x3\x2\x2\x2\xB1\xB2\a\x2\x2\x3\xB2\x19"+
+		"\x3\x2\x2\x2\xB3\xB6\x5,\x17\x2\xB4\xB6\x5\x1C\xF\x2\xB5\xB3\x3\x2\x2"+
+		"\x2\xB5\xB4\x3\x2\x2\x2\xB6\x1B\x3\x2\x2\x2\xB7\xBC\x5\x1E\x10\x2\xB8"+
+		"\xBC\x5$\x13\x2\xB9\xBC\x5P)\x2\xBA\xBC\x5T+\x2\xBB\xB7\x3\x2\x2\x2\xBB"+
+		"\xB8\x3\x2\x2\x2\xBB\xB9\x3\x2\x2\x2\xBB\xBA\x3\x2\x2\x2\xBC\x1D\x3\x2"+
+		"\x2\x2\xBD\xC0\x5 \x11\x2\xBE\xC0\x5\"\x12\x2\xBF\xBD\x3\x2\x2\x2\xBF"+
+		"\xBE\x3\x2\x2\x2\xC0\x1F\x3\x2\x2\x2\xC1\xC5\a$\x2\x2\xC2\xC4\x5\x1C\xF"+
+		"\x2\xC3\xC2\x3\x2\x2\x2\xC4\xC7\x3\x2\x2\x2\xC5\xC3\x3\x2\x2\x2\xC5\xC6"+
+		"\x3\x2\x2\x2\xC6\xC8\x3\x2\x2\x2\xC7\xC5\x3\x2\x2\x2\xC8\xC9\a%\x2\x2"+
+		"\xC9!\x3\x2\x2\x2\xCA\xCE\a\x1C\x2\x2\xCB\xCD\x5\x1C\xF\x2\xCC\xCB\x3"+
+		"\x2\x2\x2\xCD\xD0\x3\x2\x2\x2\xCE\xCC\x3\x2\x2\x2\xCE\xCF\x3\x2\x2\x2"+
+		"\xCF\xD1\x3\x2\x2\x2\xD0\xCE\x3\x2\x2\x2\xD1\xD2\a\x1D\x2\x2\xD2#\x3\x2"+
+		"\x2\x2\xD3\xD4\x5> \x2\xD4\xD5\a\"\x2\x2\xD5\xE0\x3\x2\x2\x2\xD6\xD7\x5"+
+		"N(\x2\xD7\xD8\a\"\x2\x2\xD8\xE0\x3\x2\x2\x2\xD9\xDA\x5Z.\x2\xDA\xDB\a"+
+		"\"\x2\x2\xDB\xE0\x3\x2\x2\x2\xDC\xDD\x5(\x15\x2\xDD\xDE\a\"\x2\x2\xDE"+
+		"\xE0\x3\x2\x2\x2\xDF\xD3\x3\x2\x2\x2\xDF\xD6\x3\x2\x2\x2\xDF\xD9\x3\x2"+
+		"\x2\x2\xDF\xDC\x3\x2\x2\x2\xE0%\x3\x2\x2\x2\xE1\xE2\t\x4\x2\x2\xE2\'\x3"+
+		"\x2\x2\x2\xE3\xE4\a\x3\x2\x2\xE4\xE5\x5\xE\b\x2\xE5)\x3\x2\x2\x2\xE6\xE7"+
+		"\x5&\x14\x2\xE7\xE8\a\x35\x2\x2\xE8+\x3\x2\x2\x2\xE9\xEA\a\x4\x2\x2\xEA"+
+		"\xEB\a\x35\x2\x2\xEB\xF4\a \x2\x2\xEC\xF1\x5*\x16\x2\xED\xEE\a#\x2\x2"+
+		"\xEE\xF0\x5*\x16\x2\xEF\xED\x3\x2\x2\x2\xF0\xF3\x3\x2\x2\x2\xF1\xEF\x3"+
+		"\x2\x2\x2\xF1\xF2\x3\x2\x2\x2\xF2\xF5\x3\x2\x2\x2\xF3\xF1\x3\x2\x2\x2"+
+		"\xF4\xEC\x3\x2\x2\x2\xF4\xF5\x3\x2\x2\x2\xF5\xF6\x3\x2\x2\x2\xF6\xF7\a"+
+		"!\x2\x2\xF7\xF8\x5\"\x12\x2\xF8-\x3\x2\x2\x2\xF9\xFA\a\xF\x2\x2\xFA\xFB"+
+		"\a\x35\x2\x2\xFB\xFC\a,\x2\x2\xFC\xFD\x5\x2\x2\x2\xFD/\x3\x2\x2\x2\xFE"+
+		"\xFF\a\xF\x2\x2\xFF\x100\a\x35\x2\x2\x100\x101\a,\x2\x2\x101\x102\x5\x6"+
+		"\x4\x2\x102\x31\x3\x2\x2\x2\x103\x104\a\f\x2\x2\x104\x105\a\x35\x2\x2"+
+		"\x105\x106\a,\x2\x2\x106\x107\x5\xE\b\x2\x107\x33\x3\x2\x2\x2\x108\x109"+
+		"\a\xE\x2\x2\x109\x10A\a\x35\x2\x2\x10A\x10B\a,\x2\x2\x10B\x10C\x5\x4\x3"+
+		"\x2\x10C\x35\x3\x2\x2\x2\x10D\x10E\a\x10\x2\x2\x10E\x10F\a\x35\x2\x2\x10F"+
+		"\x110\a,\x2\x2\x110\x111\x5L\'\x2\x111\x37\x3\x2\x2\x2\x112\x118\x5\x2"+
+		"\x2\x2\x113\x118\x5\x6\x4\x2\x114\x118\x5\xE\b\x2\x115\x118\x5\x4\x3\x2"+
+		"\x116\x118\x5L\'\x2\x117\x112\x3\x2\x2\x2\x117\x113\x3\x2\x2\x2\x117\x114"+
+		"\x3\x2\x2\x2\x117\x115\x3\x2\x2\x2\x117\x116\x3\x2\x2\x2\x118\x39\x3\x2"+
+		"\x2\x2\x119\x11A\a\x35\x2\x2\x11A\x11B\a,\x2\x2\x11B\x11C\x5\x38\x1D\x2"+
+		"\x11C;\x3\x2\x2\x2\x11D\x123\x5.\x18\x2\x11E\x123\x5\x30\x19\x2\x11F\x123"+
+		"\x5\x32\x1A\x2\x120\x123\x5\x34\x1B\x2\x121\x123\x5:\x1E\x2\x122\x11D"+
+		"\x3\x2\x2\x2\x122\x11E\x3\x2\x2\x2\x122\x11F\x3\x2\x2\x2\x122\x120\x3"+
+		"\x2\x2\x2\x122\x121\x3\x2\x2\x2\x123=\x3\x2\x2\x2\x124\x125\x5<\x1F\x2"+
+		"\x125?\x3\x2\x2\x2\x126\x127\t\x5\x2\x2\x127\x41\x3\x2\x2\x2\x128\x129"+
+		"\x5\xE\b\x2\x129\x12A\x5@!\x2\x12A\x12B\x5\xE\b\x2\x12B\x43\x3\x2\x2\x2"+
+		"\x12C\x133\x3\x2\x2\x2\x12D\x133\a\x1A\x2\x2\x12E\x133\a\x1B\x2\x2\x12F"+
+		"\x133\x5\x42\"\x2\x130\x131\a\x33\x2\x2\x131\x133\x5\x44#\x2\x132\x12C"+
+		"\x3\x2\x2\x2\x132\x12D\x3\x2\x2\x2\x132\x12E\x3\x2\x2\x2\x132\x12F\x3"+
+		"\x2\x2\x2\x132\x130\x3\x2\x2\x2\x133\x45\x3\x2\x2\x2\x134\x135\b$\x1\x2"+
+		"\x135\x136\x5H%\x2\x136\x13C\x3\x2\x2\x2\x137\x138\f\x3\x2\x2\x138\x139"+
+		"\a\x32\x2\x2\x139\x13B\x5H%\x2\x13A\x137\x3\x2\x2\x2\x13B\x13E\x3\x2\x2"+
+		"\x2\x13C\x13A\x3\x2\x2\x2\x13C\x13D\x3\x2\x2\x2\x13DG\x3\x2\x2\x2\x13E"+
+		"\x13C\x3\x2\x2\x2\x13F\x140\b%\x1\x2\x140\x141\x5J&\x2\x141\x147\x3\x2"+
+		"\x2\x2\x142\x143\f\x3\x2\x2\x143\x144\a\x31\x2\x2\x144\x146\x5J&\x2\x145"+
+		"\x142\x3\x2\x2\x2\x146\x149\x3\x2\x2\x2\x147\x145\x3\x2\x2\x2\x147\x148"+
+		"\x3\x2\x2\x2\x148I\x3\x2\x2\x2\x149\x147\x3\x2\x2\x2\x14A\x151\x5\x44"+
+		"#\x2\x14B\x151\x5\x16\f\x2\x14C\x14D\a \x2\x2\x14D\x14E\x5\x46$\x2\x14E"+
+		"\x14F\a!\x2\x2\x14F\x151\x3\x2\x2\x2\x150\x14A\x3\x2\x2\x2\x150\x14B\x3"+
+		"\x2\x2\x2\x150\x14C\x3\x2\x2\x2\x151K\x3\x2\x2\x2\x152\x153\x5\x46$\x2"+
+		"\x153M\x3\x2\x2\x2\x154\x155\x5\b\x5\x2\x155\x158\x5\n\x6\x2\x156\x157"+
+		"\a\b\x2\x2\x157\x159\x5\f\a\x2\x158\x156\x3\x2\x2\x2\x158\x159\x3\x2\x2"+
+		"\x2\x159\x15A\x3\x2\x2\x2\x15A\x15B\a\v\x2\x2\x15B\x15E\x5\f\a\x2\x15C"+
+		"\x15D\a\t\x2\x2\x15D\x15F\x5\xE\b\x2\x15E\x15C\x3\x2\x2\x2\x15E\x15F\x3"+
+		"\x2\x2\x2\x15F\x160\x3\x2\x2\x2\x160\x161\a\n\x2\x2\x161\x162\x5\xE\b"+
+		"\x2\x162O\x3\x2\x2\x2\x163\x164\a\x5\x2\x2\x164\x165\a \x2\x2\x165\x166"+
+		"\x5L\'\x2\x166\x167\a!\x2\x2\x167\x169\x5\"\x12\x2\x168\x16A\x5R*\x2\x169"+
+		"\x168\x3\x2\x2\x2\x169\x16A\x3\x2\x2\x2\x16AQ\x3\x2\x2\x2\x16B\x16C\a"+
+		"\x6\x2\x2\x16C\x170\x5\"\x12\x2\x16D\x16E\a\x6\x2\x2\x16E\x170\x5P)\x2"+
+		"\x16F\x16B\x3\x2\x2\x2\x16F\x16D\x3\x2\x2\x2\x170S\x3\x2\x2\x2\x171\x172"+
+		"\a\a\x2\x2\x172\x173\a \x2\x2\x173\x174\x5L\'\x2\x174\x175\a!\x2\x2\x175"+
+		"\x176\x5\"\x12\x2\x176U\x3\x2\x2\x2\x177\x17C\x5\n\x6\x2\x178\x17C\x5"+
+		"\f\a\x2\x179\x17C\x5L\'\x2\x17A\x17C\x5\xE\b\x2\x17B\x177\x3\x2\x2\x2"+
+		"\x17B\x178\x3\x2\x2\x2\x17B\x179\x3\x2\x2\x2\x17B\x17A\x3\x2\x2\x2\x17C"+
+		"W\x3\x2\x2\x2\x17D\x17F\x5V,\x2\x17E\x17D\x3\x2\x2\x2\x17E\x17F\x3\x2"+
+		"\x2\x2\x17F\x188\x3\x2\x2\x2\x180\x183\x5V,\x2\x181\x182\a#\x2\x2\x182"+
+		"\x184\x5V,\x2\x183\x181\x3\x2\x2\x2\x184\x185\x3\x2\x2\x2\x185\x183\x3"+
+		"\x2\x2\x2\x185\x186\x3\x2\x2\x2\x186\x188\x3\x2\x2\x2\x187\x17E\x3\x2"+
+		"\x2\x2\x187\x180\x3\x2\x2\x2\x188Y\x3\x2\x2\x2\x189\x18A\a\x35\x2\x2\x18A"+
+		"\x18B\a \x2\x2\x18B\x18C\x5X-\x2\x18C\x18D\a!\x2\x2\x18D[\x3\x2\x2\x2"+
+		"#hqu|\x80\x8D\x8F\x9B\x9D\xA8\xAF\xB5\xBB\xBF\xC5\xCE\xDF\xF1\xF4\x117"+
+		"\x122\x132\x13C\x147\x150\x158\x15E\x169\x16F\x17B\x17E\x185\x187";
 	public static readonly ATN _ATN =
 		new ATNDeserializer().Deserialize(_serializedATN.ToCharArray());
 }

@@ -1,0 +1,9 @@
+Object test = Cube;
+
+move test to [3,3,3] in 3;
+
+move test to [-3,-3,-3] in 6;
+
+move test to [0,0,0] in 3;
+
+move test to [3, -3, 0] in 3;

@@ -1,11 +1,11 @@
-Object sun = Cube
+Object sun = Cube;
 transform sun to [4,4,4] in 0;
 
-Object mercury = Cube
+Object mercury = Cube;
 transform mercury to [0.5, 0.5, 0.5] in 0;
 move mercury to [5, 0, 0] in 0;
 
-Object venus = Cube
+Object venus = Cube;
 move venus to [8, 0, 0] in 0;
 
 <>

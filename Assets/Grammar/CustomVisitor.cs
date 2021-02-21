@@ -255,6 +255,12 @@
 			}
 		}
 
+		public override object VisitWait( AnimationParser.WaitContext context) {
+			float value = (float)Visit(context.numberValue());
+			this.currentTime += value;
+			return value;
+		}
+
 		public override object VisitAction(AnimationParser.ActionContext context)
 		{
 			var previousContext = this.context;
@@ -285,9 +291,9 @@
 
 			this.context = previousContext;
 
-			var diff = (DateTime.Now - this.startOfLastAction).Milliseconds;
+			var diff = (DateTime.Now - this.startOfLastAction).TotalMilliseconds;
 
-			this.currentTime = this.currentTime + diff / 1000;
+			this.currentTime = this.currentTime + (float)diff / 1000;
 
 			coroutine.handleAnimations(action, target, value, time, from, this.currentTime);
 

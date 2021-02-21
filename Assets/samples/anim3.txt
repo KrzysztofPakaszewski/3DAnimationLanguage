@@ -9,11 +9,12 @@ move cylinder to [4,-4,0] in 0;
 
 Object group = [sphere, cube, cylinder, Sphere];
 
+Object group2 = [group, Cube];
 <>
-  rotate group to [0, 360 *3, 0] in 9;
+  rotate group2 to [0, 360 *3, 0] in 9;
   {
-    move group to [2, 0, 0] in 3;
-    move group to [-2, 0, 0] in 3;
-    move group to [0,0,0] in 3;
+    move group2 to [2, 0, 0] in 3;
+    move group2 to [-2, 0, 0] in 3;
+    move group2 to [0,0,0] in 3;
   }
 </>

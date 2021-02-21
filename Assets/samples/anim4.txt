@@ -12,6 +12,11 @@ Object sphere = Sphere;
 
 <>
   moveInSquare(cube, 6, 10);
-  moveInSquare(sphere, 10, 10);
+  {
+	Object delay = Cube;
+	transform cube to [0,0,0] in 0;
+	rotate cube to [0,0,0] in 2
+	moveInSquare(sphere, 10, 10);
+  }
   rotate cube to [360 * 4, 360 * 4, 0] in 10;
 </>

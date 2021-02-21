@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generated from grammar\Animation.g4 by ANTLR 4.6.6
+// Generated from C:\Users\krzys\Documents\praca\AnimationLanguage\grammar\Animation.g4 by ANTLR 4.6.6
 
 // Unreachable code detected
 #pragma warning disable 0162
@@ -239,6 +239,17 @@ public interface IAnimationListener : IParseTreeListener {
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	void ExitType([NotNull] AnimationParser.TypeContext context);
+
+	/// <summary>
+	/// Enter a parse tree produced by <see cref="AnimationParser.wait"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void EnterWait([NotNull] AnimationParser.WaitContext context);
+	/// <summary>
+	/// Exit a parse tree produced by <see cref="AnimationParser.wait"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void ExitWait([NotNull] AnimationParser.WaitContext context);
 
 	/// <summary>
 	/// Enter a parse tree produced by <see cref="AnimationParser.argument"/>.
